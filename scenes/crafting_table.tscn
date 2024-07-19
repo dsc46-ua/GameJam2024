@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://csixkbp0lxfja"]
+
+[ext_resource type="Texture2D" uid="uid://cgw7oh6trm1um" path="res://assets/icon.svg" id="1_2on0l"]
+
+[node name="crafting_table" type="Sprite2D"]
+position = Vector2(278, 99)
+scale = Vector2(0.164063, 0.164063)
+texture = ExtResource("1_2on0l")
