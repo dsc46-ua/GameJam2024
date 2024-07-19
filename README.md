@@ -1,4 +1,4 @@
 # GameJam2024
 
 IDEA PRINCIPAL
-Juego de sectas, en el somos un personaje que craftea cócteles raros¿?
+Trabajas como bartender en una secta y diferentes miembros de esta te piden cocteles
