@@ -1,0 +1,65 @@
+[gd_scene load_steps=10 format=3 uid="uid://c5v0gey8vd88n"]
+
+[ext_resource type="Texture2D" uid="uid://bh80xov3l2ul7" path="res://assets/pocima.png" id="1_6rjq1"]
+[ext_resource type="Texture2D" uid="uid://b8cn8r4kkbr7c" path="res://assets/relleno_pocima1.png" id="2_3xg8r"]
+[ext_resource type="Texture2D" uid="uid://b0266vmvg3fmg" path="res://assets/relleno_pocima2.png" id="3_umt8f"]
+[ext_resource type="Texture2D" uid="uid://b48jn3skqg51f" path="res://assets/relleno_pocima3.png" id="4_7vfda"]
+[ext_resource type="Texture2D" uid="uid://dh30vcyrben84" path="res://assets/relleno_pocima4.png" id="5_bd78a"]
+[ext_resource type="Texture2D" uid="uid://cg4xgko7y0oys" path="res://assets/relleno_pocima5.png" id="6_iapdc"]
+[ext_resource type="Texture2D" uid="uid://d0o41igh4n00k" path="res://assets/relleno_pocima6.png" id="7_kcdbg"]
+[ext_resource type="Script" path="res://Potion.gd" id="8_jtuqw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w5ybk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3xg8r")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("3_umt8f")
+}, {
+"duration": 2.0,
+"texture": ExtResource("4_7vfda")
+}, {
+"duration": 2.0,
+"texture": ExtResource("5_bd78a")
+}, {
+"duration": 2.0,
+"texture": ExtResource("6_iapdc")
+}, {
+"duration": 2.0,
+"texture": ExtResource("7_kcdbg")
+}],
+"loop": false,
+"name": &"fill",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_kcdbg")
+}],
+"loop": true,
+"name": &"full",
+"speed": 5.0
+}]
+
+[node name="Vase" type="Sprite2D"]
+position = Vector2(157, 96)
+scale = Vector2(1.15817, 1.10249)
+texture = ExtResource("1_6rjq1")
+script = ExtResource("8_jtuqw")
+
+[node name="Filling" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_w5ybk")
+animation = &"full"
+
+[connection signal="animation_finished" from="Filling" to="." method="_on_filling_animation_finished"]
+[connection signal="animation_finished" from="Filling" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="animation_finished" from="Filling" to="Filling" method="_on_animation_finished"]
+[connection signal="animation_looped" from="Filling" to="." method="_on_filling_animation_looped"]
+[connection signal="sprite_frames_changed" from="Filling" to="." method="_on_filling_sprite_frames_changed"]
