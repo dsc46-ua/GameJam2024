@@ -1,8 +1,25 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3l0hm3hq4xvo"]
+[gd_scene load_steps=3 format=3 uid="uid://dlr0f007e430m"]
 
-[ext_resource type="Texture2D" uid="uid://cgw7oh6trm1um" path="res://assets/icon.svg" id="2_mguex"]
+[ext_resource type="Script" path="res://scripts/manual.gd" id="1_ud3kd"]
+[ext_resource type="Texture2D" uid="uid://dr13bavb6hgw" path="res://assets/manual.png" id="2_k8r8w"]
 
-[node name="manual" type="Sprite2D"]
-position = Vector2(26.875, 111.625)
-scale = Vector2(0.158203, 0.162109)
-texture = ExtResource("2_mguex")
+[node name="manual" type="Node2D"]
+script = ExtResource("1_ud3kd")
+
+[node name="baseManualSprite" type="Sprite2D" parent="."]
+position = Vector2(30, 101)
+scale = Vector2(0.210938, 0.203125)
+texture = ExtResource("2_k8r8w")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 23.0
+offset_top = 95.0
+offset_right = 36.0
+offset_bottom = 106.0
+
+[node name="manualPage1" type="Sprite2D" parent="."]
+
+[connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="." method="_on_button_mouse_exited"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://b5teofxfbmeqg"]
+
+[ext_resource type="Script" path="res://scripts/displayed_manual.gd" id="1_udpjq"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7a7rj"]
+load_path = "res://.godot/imported/run-1.png-6f5f31448b567f58e70cb03569d535c6.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o8jnr"]
+load_path = "res://.godot/imported/run-2.png-d636dc6e8e6554e16f4d442d5c23bda2.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8y26r"]
+load_path = "res://.godot/imported/run-3.png-9b06d42b032378df58b0acbf7695a0ca.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w3ydf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_7a7rj")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_o8jnr")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_8y26r")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="displayed_manual" type="Node2D"]
+script = ExtResource("1_udpjq")
+
+[node name="full_manual" type="AnimatedSprite2D" parent="."]
+position = Vector2(169, 85)
+sprite_frames = SubResource("SpriteFrames_w3ydf")
+
+[node name="close" type="Button" parent="."]
+offset_left = 222.0
+offset_top = 50.0
+offset_right = 230.0
+offset_bottom = 58.0
+
+[node name="pass_page" type="Button" parent="."]
+offset_left = 222.0
+offset_top = 126.0
+offset_right = 230.0
+offset_bottom = 134.0
+
+[node name="back_page" type="Button" parent="."]
+offset_left = 118.0
+offset_top = 126.0
+offset_right = 126.0
+offset_bottom = 134.0
+
+[connection signal="pressed" from="close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="pass_page" to="." method="_on_pass_page_pressed"]
+[connection signal="pressed" from="back_page" to="." method="_on_back_page_pressed"]
