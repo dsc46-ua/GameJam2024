@@ -1,0 +1,86 @@
+[gd_scene load_steps=3 format=3 uid="uid://bo3u841eltlag"]
+
+[ext_resource type="Script" path="res://materiales.gd" id="1_83m8x"]
+[ext_resource type="PackedScene" uid="uid://bt83m3rftki2x" path="res://prueba.tscn" id="1_f8lea"]
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(1, 1.0039)
+script = ExtResource("1_83m8x")
+
+[node name="ing1-1" parent="." instance=ExtResource("1_f8lea")]
+position = Vector2(52, 69.7284)
+animation = &"marcado"
+
+[node name="Button1" type="Button" parent="ing1-1"]
+offset_left = -9.0
+offset_top = -9.0
+offset_right = -1.0
+offset_bottom = -1.0
+scale = Vector2(2.23016, 2.25583)
+focus_mode = 0
+theme_type_variation = &"FlatButton"
+
+[node name="ing1-2" parent="." instance=ExtResource("1_f8lea")]
+position = Vector2(99, 44.8252)
+animation = &"marcado"
+
+[node name="Button2" type="Button" parent="ing1-2"]
+offset_left = -8.0
+offset_top = -8.96503
+offset_bottom = -0.965034
+scale = Vector2(2.23016, 2.25583)
+focus_mode = 0
+theme_type_variation = &"FlatButton"
+
+[node name="ing1-3" parent="." instance=ExtResource("1_f8lea")]
+position = Vector2(159, 69.7284)
+animation = &"marcado"
+
+[node name="Button3" type="Button" parent="ing1-3"]
+offset_left = -9.0
+offset_top = -9.0
+offset_right = -1.0
+offset_bottom = -1.0
+scale = Vector2(2.23016, 2.25583)
+focus_mode = 0
+theme_type_variation = &"FlatButton"
+
+[node name="ing1-4" parent="." instance=ExtResource("1_f8lea")]
+position = Vector2(198, 44.8254)
+animation = &"marcado"
+
+[node name="Button4" type="Button" parent="ing1-4"]
+offset_left = -9.0
+offset_top = -9.0
+offset_right = -1.0
+offset_bottom = -1.0
+scale = Vector2(2.23016, 2.25583)
+focus_mode = 0
+theme_type_variation = &"FlatButton"
+
+[node name="ing1-5" parent="." instance=ExtResource("1_f8lea")]
+position = Vector2(249, 71.7206)
+animation = &"marcado"
+
+[node name="Button5" type="Button" parent="ing1-5"]
+offset_left = -9.0
+offset_top = -9.0
+offset_right = -1.0
+offset_bottom = -1.0
+scale = Vector2(2.23016, 2.25583)
+focus_mode = 0
+theme_type_variation = &"FlatButton"
+
+[connection signal="animation_changed" from="ing1-1" to="." method="_on_ing_11_animation_changed"]
+[connection signal="pressed" from="ing1-1/Button1" to="." method="_on_button_1_pressed"]
+[connection signal="animation_changed" from="ing1-2" to="." method="_on_ing_11_animation_changed"]
+[connection signal="pressed" from="ing1-2/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="animation_changed" from="ing1-3" to="." method="_on_ing_11_animation_changed"]
+[connection signal="animation_changed" from="ing1-3" to="." method="_on_ing_13_animation_changed"]
+[connection signal="pressed" from="ing1-3/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="animation_changed" from="ing1-4" to="." method="_on_ing_11_animation_changed"]
+[connection signal="animation_changed" from="ing1-4" to="." method="_on_ing_14_animation_changed"]
+[connection signal="pressed" from="ing1-4/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="animation_changed" from="ing1-5" to="." method="_on_ing_11_animation_changed"]
+[connection signal="animation_changed" from="ing1-5" to="." method="_on_ing_15_animation_changed"]
+[connection signal="pressed" from="ing1-5/Button5" to="." method="_on_button_5_pressed"]
