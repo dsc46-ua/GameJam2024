@@ -1,0 +1,135 @@
+[gd_scene load_steps=11 format=3 uid="uid://dbsw33e8qsbqi"]
+
+[ext_resource type="Script" path="res://Personaje.gd" id="1_6krua"]
+[ext_resource type="Texture2D" uid="uid://bebjqyfmg4lmv" path="res://assets/Sprite-0005.png" id="2_vnj2y"]
+[ext_resource type="Texture2D" uid="uid://c3ni4s7w7cej" path="res://assets/Sprite-0004.png" id="3_a1wob"]
+[ext_resource type="Texture2D" uid="uid://h3xhidd8uce3" path="res://assets/Sprite-0003.png" id="4_ns66n"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kksyh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vnj2y")
+}],
+"loop": true,
+"name": &"enfadado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_a1wob")
+}],
+"loop": true,
+"name": &"feliz",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ns66n")
+}],
+"loop": true,
+"name": &"neutral",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_dw81d"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(166, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_jsrr0"]
+resource_name = "entrar"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(166, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_cc0nd"]
+resource_name = "quieto"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(166, 0), Vector2(166, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_bpvi1"]
+resource_name = "salir"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(166, 0), Vector2(390, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_i7wxv"]
+_data = {
+"RESET": SubResource("Animation_dw81d"),
+"entrar": SubResource("Animation_jsrr0"),
+"quieto": SubResource("Animation_cc0nd"),
+"salir": SubResource("Animation_bpvi1")
+}
+
+[node name="Personaje" type="CharacterBody2D"]
+position = Vector2(166, 0)
+script = ExtResource("1_6krua")
+
+[node name="Personaje" type="AnimatedSprite2D" parent="."]
+position = Vector2(-21, 59)
+scale = Vector2(0.772589, 0.714457)
+sprite_frames = SubResource("SpriteFrames_kksyh")
+animation = &"neutral"
+autoplay = "neutral"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_i7wxv")
+}
+
+[node name="Button" type="Button" parent="."]
+show_behind_parent = true
+offset_left = -63.0
+offset_top = 33.0
+offset_right = -55.0
+offset_bottom = 41.0
+scale = Vector2(7.94344, 12.4117)
+focus_mode = 0
+theme_type_variation = &"FlatButton"
+flat = true
+
+[connection signal="animation_finished" from="Personaje" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
