@@ -1,5 +1,7 @@
 extends Node2D
 
+@onready var back: Sprite2D = $go_back/go_back_sprite
+
 @onready var mercurio: AnimatedSprite2D = $mercurio/mercurio_image
 @onready var mercurio_name: Label = $mercurio/name
 @onready var mercurio_type: Label = $mercurio/type
@@ -148,6 +150,12 @@ func select_sprite(image, type: String):
 
 
 #Signals
+func _on_go_back_mouse_entered():
+	highlight(back)
+
+
+func _on_go_back_mouse_exited():
+	unhighlight(back)
 
 func _on_mercurio_button_pressed():
 	select_sprite(mercurio, "base")
@@ -302,3 +310,7 @@ func _on_canela_button_mouse_entered():
 func _on_canela_button_mouse_exited():
 	unhighlight(canela)
 	hideLabel(canela_name, canela_type)
+
+
+func _on_go_back_pressed():
+	get_tree().change_scene_to_file("res://scenes/game.tscn")
