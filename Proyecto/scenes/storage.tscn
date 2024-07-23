@@ -293,16 +293,15 @@ animations = [{
 [node name="materials" type="Node2D"]
 script = ExtResource("1_vsq5h")
 
-[node name="background" type="Sprite2D" parent="."]
-
 [node name="mercurio" type="Node2D" parent="."]
-position = Vector2(142, -28)
+position = Vector2(140, -28)
 
 [node name="mercurio_image" type="AnimatedSprite2D" parent="mercurio"]
 position = Vector2(39, 153)
 sprite_frames = SubResource("SpriteFrames_ayjd1")
 
 [node name="mercurio_button" type="Button" parent="mercurio"]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 29.0
 offset_top = 143.0
 offset_right = 50.0
@@ -312,10 +311,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="name" type="Label" parent="mercurio"]
 visible = false
-offset_left = -10.0
-offset_top = 125.0
-offset_right = 92.0
-offset_bottom = 148.0
+offset_left = -12.0
+offset_top = 126.0
+offset_right = 90.0
+offset_bottom = 149.0
 text = "Name : Mercury"
 label_settings = SubResource("LabelSettings_3ikuh")
 horizontal_alignment = 1
@@ -323,22 +322,23 @@ vertical_alignment = 1
 
 [node name="type" type="Label" parent="mercurio"]
 visible = false
-offset_left = -10.0
-offset_top = 124.0
-offset_right = 91.0
-offset_bottom = 146.0
+offset_left = -12.0
+offset_top = 127.0
+offset_right = 89.0
+offset_bottom = 149.0
 text = "Type : Base"
 label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="estanyo" type="Node2D" parent="."]
-position = Vector2(213, 19)
+position = Vector2(329, 0)
 
 [node name="estanyo_image" type="AnimatedSprite2D" parent="estanyo"]
 position = Vector2(-120, 125)
 sprite_frames = SubResource("SpriteFrames_6deaw")
 
 [node name="estanyo_button" type="Button" parent="estanyo"]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = -131.0
 offset_top = 115.0
 offset_right = -110.0
@@ -349,9 +349,9 @@ metadata/_edit_use_anchors_ = true
 [node name="name" type="Label" parent="estanyo"]
 visible = false
 offset_left = -171.0
-offset_top = 97.0
+offset_top = 98.0
 offset_right = -69.0
-offset_bottom = 120.0
+offset_bottom = 121.0
 text = "Name : Tin"
 label_settings = SubResource("LabelSettings_3ikuh")
 horizontal_alignment = 1
@@ -360,21 +360,22 @@ vertical_alignment = 1
 [node name="type" type="Label" parent="estanyo"]
 visible = false
 offset_left = -170.0
-offset_top = 97.0
+offset_top = 99.0
 offset_right = -69.0
-offset_bottom = 119.0
+offset_bottom = 121.0
 text = "Type : Base"
 label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="oro" type="Node2D" parent="."]
-position = Vector2(-5, -7)
+position = Vector2(89, -27)
 
 [node name="oro_image" type="AnimatedSprite2D" parent="oro"]
 position = Vector2(150, 152)
 sprite_frames = SubResource("SpriteFrames_fut3t")
 
 [node name="oro_button" type="Button" parent="oro"]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 139.0
 offset_top = 142.0
 offset_right = 160.0
@@ -395,22 +396,23 @@ vertical_alignment = 1
 
 [node name="type" type="Label" parent="oro"]
 visible = false
-offset_left = 100.0
-offset_top = 125.0
-offset_right = 201.0
-offset_bottom = 147.0
+offset_left = 99.0
+offset_top = 126.0
+offset_right = 200.0
+offset_bottom = 148.0
 text = "Type : Base"
 label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="cobre" type="Node2D" parent="."]
-position = Vector2(154, 107)
+position = Vector2(224, 87)
 
 [node name="cobre_image" type="AnimatedSprite2D" parent="cobre"]
 position = Vector2(46, 38)
 sprite_frames = SubResource("SpriteFrames_ebhf1")
 
 [node name="cobre_button" type="Button" parent="cobre"]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 36.0
 offset_top = 29.0
 offset_right = 57.0
@@ -420,9 +422,9 @@ metadata/_edit_use_anchors_ = true
 
 [node name="name" type="Label" parent="cobre"]
 visible = false
-offset_left = -3.0
+offset_left = -5.0
 offset_top = 11.0
-offset_right = 99.0
+offset_right = 97.0
 offset_bottom = 34.0
 text = "Name : Copper Oxide
 "
@@ -432,22 +434,23 @@ vertical_alignment = 1
 
 [node name="type" type="Label" parent="cobre"]
 visible = false
-offset_left = -3.0
-offset_top = 11.0
-offset_right = 98.0
-offset_bottom = 33.0
+offset_left = -5.0
+offset_top = 12.0
+offset_right = 96.0
+offset_bottom = 34.0
 text = "Type : Base"
 label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="hierro" type="Node2D" parent="."]
-position = Vector2(224, 109)
+position = Vector2(254, 88)
 
 [node name="hierro_image" type="AnimatedSprite2D" parent="hierro"]
 position = Vector2(47, 37)
 sprite_frames = SubResource("SpriteFrames_ipdut")
 
 [node name="hierro_button" type="Button" parent="hierro"]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 37.0
 offset_top = 27.0
 offset_right = 58.0
@@ -457,33 +460,34 @@ metadata/_edit_use_anchors_ = true
 
 [node name="name" type="Label" parent="hierro"]
 visible = false
-offset_left = -3.0
-offset_top = 10.0
-offset_right = 99.0
-offset_bottom = 33.0
-text = "Name : Iron Oxide"
+offset_left = -2.0
+offset_top = 11.0
+offset_right = 100.0
+offset_bottom = 34.0
+text = "Name : Iron"
 label_settings = SubResource("LabelSettings_3ikuh")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="type" type="Label" parent="hierro"]
 visible = false
-offset_left = -4.0
-offset_top = 10.0
-offset_right = 97.0
-offset_bottom = 32.0
+offset_left = -2.0
+offset_top = 11.0
+offset_right = 99.0
+offset_bottom = 33.0
 text = "Type : Base"
 label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="litio" type="Node2D" parent="."]
-position = Vector2(-17, 9)
+position = Vector2(-17, 11)
 
 [node name="litio_image" type="AnimatedSprite2D" parent="litio"]
 position = Vector2(47, 48)
 sprite_frames = SubResource("SpriteFrames_4t1h4")
 
 [node name="litio_button" type="Button" parent="litio"]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 32.0
 offset_top = 38.0
 offset_right = 60.0
@@ -491,22 +495,20 @@ offset_bottom = 58.0
 flat = true
 
 [node name="name" type="Label" parent="litio"]
-visible = false
 offset_left = -3.0
-offset_top = 20.0
+offset_top = 14.0
 offset_right = 99.0
-offset_bottom = 43.0
+offset_bottom = 37.0
 text = "Name : Lithium"
 label_settings = SubResource("LabelSettings_3ikuh")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="type" type="Label" parent="litio"]
-visible = false
-offset_left = -2.0
-offset_top = 19.0
-offset_right = 99.0
-offset_bottom = 41.0
+offset_left = -3.0
+offset_top = 15.0
+offset_right = 98.0
+offset_bottom = 37.0
 text = "Type : Enhancers"
 label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
@@ -519,6 +521,7 @@ position = Vector2(47, 38)
 sprite_frames = SubResource("SpriteFrames_i4rkc")
 
 [node name="cal_button" type="Button" parent="cal"]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 35.0
 offset_top = 31.0
 offset_right = 56.0
@@ -530,9 +533,9 @@ metadata/_edit_use_anchors_ = true
 [node name="name" type="Label" parent="cal"]
 visible = false
 offset_left = -3.0
-offset_top = 9.0
+offset_top = 2.0
 offset_right = 99.0
-offset_bottom = 32.0
+offset_bottom = 25.0
 text = "Name : Lime"
 label_settings = SubResource("LabelSettings_3ikuh")
 horizontal_alignment = 1
@@ -540,22 +543,23 @@ vertical_alignment = 1
 
 [node name="type" type="Label" parent="cal"]
 visible = false
-offset_left = -2.0
-offset_top = 9.0
-offset_right = 99.0
-offset_bottom = 31.0
+offset_left = -4.0
+offset_top = 2.0
+offset_right = 97.0
+offset_bottom = 24.0
 text = "Type : Enhancers"
 label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="ladrillo" type="Node2D" parent="."]
-position = Vector2(-20, 21)
+position = Vector2(-18, 23)
 
 [node name="ladrillo_image" type="AnimatedSprite2D" parent="ladrillo"]
 position = Vector2(101, 34)
 sprite_frames = SubResource("SpriteFrames_xagde")
 
 [node name="ladrillo_button" type="Button" parent="ladrillo"]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 91.0
 offset_top = 23.0
 offset_right = 112.0
@@ -567,9 +571,9 @@ metadata/_edit_use_anchors_ = true
 [node name="name" type="Label" parent="ladrillo"]
 visible = false
 offset_left = 52.0
-offset_top = 8.0
+offset_top = 3.0
 offset_right = 154.0
-offset_bottom = 31.0
+offset_bottom = 26.0
 text = "Name: Brick oil"
 label_settings = SubResource("LabelSettings_3ikuh")
 horizontal_alignment = 1
@@ -578,9 +582,9 @@ vertical_alignment = 1
 [node name="type" type="Label" parent="ladrillo"]
 visible = false
 offset_left = 53.0
-offset_top = 7.0
+offset_top = 4.0
 offset_right = 154.0
-offset_bottom = 29.0
+offset_bottom = 26.0
 text = "Type : Enhancers"
 label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
@@ -593,6 +597,7 @@ position = Vector2(47, 38)
 sprite_frames = SubResource("SpriteFrames_i2en0")
 
 [node name="magnesio_button" type="Button" parent="magnesio"]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 33.0
 offset_top = 34.0
 offset_right = 54.0
@@ -603,10 +608,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="name" type="Label" parent="magnesio"]
 visible = false
-offset_left = -3.0
-offset_top = 11.0
+offset_left = -7.0
+offset_top = 12.0
 offset_right = 99.0
-offset_bottom = 34.0
+offset_bottom = 35.0
 text = "Name: Magnesium"
 label_settings = SubResource("LabelSettings_3ikuh")
 horizontal_alignment = 1
@@ -614,22 +619,23 @@ vertical_alignment = 1
 
 [node name="type" type="Label" parent="magnesio"]
 visible = false
-offset_left = -3.0
-offset_top = 10.0
-offset_right = 98.0
-offset_bottom = 32.0
+offset_left = -5.0
+offset_top = 13.0
+offset_right = 96.0
+offset_bottom = 35.0
 text = "Type : Enhancers"
 label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="oropimente" type="Node2D" parent="."]
-position = Vector2(53, -13)
+position = Vector2(53, -14)
 
 [node name="oropimente_image" type="AnimatedSprite2D" parent="oropimente"]
 position = Vector2(81, 64)
 sprite_frames = SubResource("SpriteFrames_g3xs4")
 
 [node name="oropimente_button" type="Button" parent="oropimente"]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 74.0
 offset_top = 58.0
 offset_right = 95.0
@@ -639,33 +645,33 @@ flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="name" type="Label" parent="oropimente"]
-visible = false
-offset_left = 30.0
-offset_top = 35.0
-offset_right = 132.0
-offset_bottom = 58.0
+offset_left = 32.0
+offset_top = 40.0
+offset_right = 134.0
+offset_bottom = 63.0
 text = "Name: Orpiment"
 label_settings = SubResource("LabelSettings_3ikuh")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="type" type="Label" parent="oropimente"]
-visible = false
-offset_left = 31.0
-offset_top = 34.0
-offset_right = 132.0
-offset_bottom = 56.0
+offset_left = 32.0
+offset_top = 41.0
+offset_right = 133.0
+offset_bottom = 63.0
 text = "Type : Enhancers"
 label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="miel" type="Node2D" parent="."]
+position = Vector2(-38, 10)
 
 [node name="miel_image" type="AnimatedSprite2D" parent="miel"]
 position = Vector2(225, 43)
 sprite_frames = SubResource("SpriteFrames_vny4r")
 
 [node name="miel_button" type="Button" parent="miel"]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 214.0
 offset_top = 33.0
 offset_right = 235.0
@@ -675,10 +681,10 @@ flat = true
 
 [node name="name" type="Label" parent="miel"]
 visible = false
-offset_left = 172.0
-offset_top = 13.0
-offset_right = 274.0
-offset_bottom = 36.0
+offset_left = 175.0
+offset_top = 14.0
+offset_right = 277.0
+offset_bottom = 37.0
 text = "Name: Clover Honey"
 label_settings = SubResource("LabelSettings_3ikuh")
 horizontal_alignment = 1
@@ -686,21 +692,23 @@ vertical_alignment = 1
 
 [node name="type" type="Label" parent="miel"]
 visible = false
-offset_left = 171.0
-offset_top = 13.0
-offset_right = 272.0
-offset_bottom = 35.0
+offset_left = 175.0
+offset_top = 15.0
+offset_right = 276.0
+offset_bottom = 37.0
 text = "Type: Flavors"
 label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="lupulo" type="Node2D" parent="."]
+position = Vector2(-47, 11)
 
 [node name="lupulo_image" type="AnimatedSprite2D" parent="lupulo"]
 position = Vector2(271, 42)
 sprite_frames = SubResource("SpriteFrames_nd16v")
 
 [node name="lupulo_button" type="Button" parent="lupulo"]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 260.0
 offset_top = 32.0
 offset_right = 281.0
@@ -710,10 +718,10 @@ flat = true
 
 [node name="name" type="Label" parent="lupulo"]
 visible = false
-offset_left = 221.0
-offset_top = 14.0
-offset_right = 323.0
-offset_bottom = 37.0
+offset_left = 218.0
+offset_top = 13.0
+offset_right = 320.0
+offset_bottom = 36.0
 text = "Name: Hops"
 label_settings = SubResource("LabelSettings_3ikuh")
 horizontal_alignment = 1
@@ -721,21 +729,23 @@ vertical_alignment = 1
 
 [node name="type" type="Label" parent="lupulo"]
 visible = false
-offset_left = 223.0
-offset_top = 13.0
-offset_right = 324.0
-offset_bottom = 35.0
+offset_left = 219.0
+offset_top = 14.0
+offset_right = 320.0
+offset_bottom = 36.0
 text = "Type: Flavors"
 label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="jengibre" type="Node2D" parent="."]
+position = Vector2(33, -31)
 
 [node name="jengibre_image" type="AnimatedSprite2D" parent="jengibre"]
 position = Vector2(225, 84)
 sprite_frames = SubResource("SpriteFrames_a0ak5")
 
 [node name="jengibre_button" type="Button" parent="jengibre"]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 213.0
 offset_top = 70.0
 offset_right = 234.0
@@ -745,10 +755,10 @@ flat = true
 
 [node name="name" type="Label" parent="jengibre"]
 visible = false
-offset_left = 174.0
-offset_top = 58.0
-offset_right = 276.0
-offset_bottom = 81.0
+offset_left = 176.0
+offset_top = 55.0
+offset_right = 278.0
+offset_bottom = 78.0
 text = "Name: Ginger"
 label_settings = SubResource("LabelSettings_3ikuh")
 horizontal_alignment = 1
@@ -756,21 +766,23 @@ vertical_alignment = 1
 
 [node name="type" type="Label" parent="jengibre"]
 visible = false
-offset_left = 176.0
-offset_top = 57.0
-offset_right = 277.0
-offset_bottom = 79.0
+offset_left = 177.0
+offset_top = 56.0
+offset_right = 278.0
+offset_bottom = 78.0
 text = "Type: Flavors"
 label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="canela" type="Node2D" parent="."]
+position = Vector2(21, -31)
 
 [node name="canela_image" type="AnimatedSprite2D" parent="canela"]
 position = Vector2(271, 84)
 sprite_frames = SubResource("SpriteFrames_vfayc")
 
 [node name="canela_button" type="Button" parent="canela"]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = 260.0
 offset_top = 74.0
 offset_right = 281.0
@@ -780,10 +792,10 @@ flat = true
 
 [node name="name" type="Label" parent="canela"]
 visible = false
-offset_left = 218.0
-offset_top = 57.0
-offset_right = 320.0
-offset_bottom = 80.0
+offset_left = 221.0
+offset_top = 55.0
+offset_right = 323.0
+offset_bottom = 78.0
 text = "Name: Cinnamon"
 label_settings = SubResource("LabelSettings_3ikuh")
 horizontal_alignment = 1
