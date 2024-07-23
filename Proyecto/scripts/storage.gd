@@ -64,8 +64,58 @@ var isBaseSelected = false
 var isEnhancerSelected = false
 var isFlavourSelected = false
 
+#Es necesario comprobar que no aparezcan dos, borrar al entrar a la escena de nuevo
 func _ready():
-	pass
+	check_animations()
+
+func check_animations():
+	match Global.ing1:
+		1:
+			mercurio.play("marcado")
+			isBaseSelected=true;
+		2:
+			estanyo.play("marcado")
+			isBaseSelected=true;
+		3:
+			oro.play("marcado")
+			isBaseSelected=true;
+		4:
+			cobre.play("marcado")
+			isBaseSelected=true;
+		5:
+			hierro.play("marcado")
+			isBaseSelected=true;
+
+	match Global.ing2:
+		6:
+			litio.play("marcado")
+			isEnhancerSelected=true;
+		7:
+			cal.play("marcado")
+			isEnhancerSelected=true;
+		8:
+			ladrillo.play("marcado")
+			isEnhancerSelected=true;
+		9:
+			magnesio.play("marcado")
+			isEnhancerSelected=true;
+		10:
+			oropimente.play("marcado")
+			isEnhancerSelected=true;
+
+	match Global.ing3:
+		11:
+			miel.play("marcado")
+			isFlavourSelected=true;
+		12:
+			lupulo.play("marcado")
+			isFlavourSelected=true;
+		13:
+			jengibre.play("marcado")
+			isFlavourSelected=true;
+		14:
+			canela.play("marcado")
+			isFlavourSelected=true;
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -126,7 +176,6 @@ func reset_base(type: String):
 #Cambia el sprite si se selecciona un ingrediente
 
 func select_sprite(image, type: String):
-	
 	match type:
 		"base":
 			
@@ -159,6 +208,7 @@ func _on_go_back_mouse_exited():
 
 func _on_mercurio_button_pressed():
 	select_sprite(mercurio, "base")
+	Global.ing1 = 1
 
 func _on_mercurio_button_mouse_entered():
 	highlight(mercurio)
@@ -170,6 +220,7 @@ func _on_mercurio_button_mouse_exited():
 
 func _on_estanyo_button_pressed():
 	select_sprite(estanyo, "base")
+	Global.ing1 = 2
 
 func _on_estanyo_button_mouse_entered():
 	highlight(estanyo)
@@ -181,6 +232,7 @@ func _on_estanyo_button_mouse_exited():
 
 func _on_oro_button_pressed():
 	select_sprite(oro, "base")
+	Global.ing1 = 3
 
 func _on_oro_button_mouse_entered():
 	highlight(oro)
@@ -192,6 +244,7 @@ func _on_oro_button_mouse_exited():
 
 func _on_cobre_button_pressed():
 	select_sprite(cobre, "base")
+	Global.ing1 = 4
 
 func _on_cobre_button_mouse_entered():
 	highlight(cobre)
@@ -203,6 +256,7 @@ func _on_cobre_button_mouse_exited():
 
 func _on_hierro_button_pressed():
 	select_sprite(hierro, "base")
+	Global.ing1 = 5
 
 func _on_hierro_button_mouse_entered():
 	highlight(hierro)
@@ -214,6 +268,7 @@ func _on_hierro_button_mouse_exited():
 
 func _on_litio_button_pressed():
 	select_sprite(litio, "enhancer")
+	Global.ing2 = 6
 
 func _on_litio_button_mouse_entered():
 	highlight(litio)
@@ -225,6 +280,7 @@ func _on_litio_button_mouse_exited():
 
 func _on_cal_button_pressed():
 	select_sprite(cal, "enhancer")
+	Global.ing2 = 7
 
 func _on_cal_button_mouse_entered():
 	highlight(cal)
@@ -236,6 +292,7 @@ func _on_cal_button_mouse_exited():
 
 func _on_magnesio_button_pressed():
 	select_sprite(magnesio, "enhancer")
+	Global.ing2 = 9
 
 func _on_magnesio_button_mouse_entered():
 	highlight(magnesio)
@@ -247,6 +304,7 @@ func _on_magnesio_button_mouse_exited():
 
 func _on_ladrillo_button_pressed():
 	select_sprite(ladrillo, "enhancer")
+	Global.ing2 = 8
 
 func _on_ladrillo_button_mouse_entered():
 	highlight(ladrillo)
@@ -258,6 +316,7 @@ func _on_ladrillo_button_mouse_exited():
 
 func _on_oropimente_button_pressed():
 	select_sprite(oropimente, "enhancer")
+	Global.ing2 = 10
 
 func _on_oropimente_button_mouse_entered():
 	highlight(oropimente)
@@ -269,6 +328,7 @@ func _on_oropimente_button_mouse_exited():
 
 func _on_miel_button_pressed():
 	select_sprite(miel, "flavour")
+	Global.ing3 = 11
 
 func _on_miel_button_mouse_entered():
 	highlight(miel)
@@ -280,6 +340,7 @@ func _on_miel_button_mouse_exited():
 
 func _on_lupulo_button_pressed():
 	select_sprite(lupulo, "flavour")
+	Global.ing3 = 12
 
 func _on_lupulo_button_mouse_entered():
 	highlight(lupulo)
@@ -291,6 +352,7 @@ func _on_lupulo_button_mouse_exited():
 
 func _on_jengibre_button_pressed():
 	select_sprite(jengibre, "flavour")
+	Global.ing3 = 12
 
 func _on_jengibre_button_mouse_entered():
 	highlight(jengibre)
@@ -302,6 +364,7 @@ func _on_jengibre_button_mouse_exited():
 
 func _on_canela_button_pressed():
 		select_sprite(canela, "flavour")
+		Global.ing3 = 14
 
 func _on_canela_button_mouse_entered():
 	highlight(canela)

@@ -11,3 +11,17 @@ Nathan: Un cafe.
 Enseguida se lo traigo
 
 => END
+
+~ bruja1
+
+Nathan: Buenas tardes.
+*El cliente iene pinta de estar teniendo un mal dia*
+- Que le pongo?
+Nathan: Un cafe.
+- Como lo quiere?
+	Nathan: Con leche
+- Un cafe solo?
+	Nathan: No, un café con leche por favor
+Enseguida se lo traigo
+
+=> END

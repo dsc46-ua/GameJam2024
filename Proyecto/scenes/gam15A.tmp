@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b4k58pxg5hxpg"]
+[gd_scene load_steps=8 format=3 uid="uid://b4k58pxg5hxpg"]
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_5g3eh"]
 [ext_resource type="PackedScene" uid="uid://dbsw33e8qsbqi" path="res://scenes/Personaje.tscn" id="2_fjr0y"]
@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://certid8pw5qlp" path="res://assets/objects/flecha.png" id="4_ke3sp"]
 [ext_resource type="Texture2D" uid="uid://m6ul8275advo" path="res://assets/backgrounds/barra.png" id="6_74icp"]
 [ext_resource type="PackedScene" uid="uid://ubed76q63n55" path="res://scenes/click_sound.tscn" id="7_p01x5"]
-[ext_resource type="PackedScene" uid="uid://c5v0gey8vd88n" path="res://scenes/Potion.tscn" id="8_cqnt2"]
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_5g3eh")
@@ -43,10 +42,6 @@ position = Vector2(160, 90)
 texture = ExtResource("6_74icp")
 
 [node name="Click_Sound" parent="." instance=ExtResource("7_p01x5")]
-
-[node name="Vase" parent="." instance=ExtResource("8_cqnt2")]
-position = Vector2(208, 129)
-scale = Vector2(0.707821, 0.628406)
 
 [connection signal="mouse_entered" from="go_storage" to="." method="_on_go_storage_mouse_entered"]
 [connection signal="mouse_exited" from="go_storage" to="." method="_on_go_storage_mouse_exited"]

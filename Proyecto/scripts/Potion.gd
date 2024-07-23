@@ -2,15 +2,12 @@ extends Sprite2D
 
 @onready var filling = $Filling
 @onready var color = $Filling
-@onready var ing1 = 1
-@onready var ing2 = 8
-@onready var ing3 = 11
 @onready var col = Color("White")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	filling.play("fill")
-	match ing1:
+	match Global.ing1:
 		1:
 			col = Color(1,0,0,1)
 		2:
@@ -21,7 +18,7 @@ func _ready():
 			col = Color(0, 0, 1, 1)
 		5:
 			col = Color(0.647059, 0.164706, 0.164706, 1)
-	match ing2:
+	match Global.ing2:
 		6:
 			col = col.lightened(0.8)
 		7:
@@ -32,7 +29,7 @@ func _ready():
 			col = col.lightened(0.2)
 		10:
 			col = col.darkened(0.3)
-	match ing3:
+	match Global.ing3:
 		11:
 			color.modulate = Color(col)
 		12:

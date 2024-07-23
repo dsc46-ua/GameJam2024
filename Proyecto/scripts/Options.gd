@@ -1,6 +1,7 @@
 extends Control
 
 var music = AudioServer.get_bus_index("Music")
+
 func _ready():
 	$MarginContainer/VBoxContainer/Volume.value=db_to_linear(music)
 
