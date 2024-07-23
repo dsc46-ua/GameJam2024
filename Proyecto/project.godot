@@ -23,6 +23,7 @@ aseprite_executable_path="C:/libresprite-development-windows-i686/libresprite.ex
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 BackgroundMusic="*res://scenes/BackgroundMusic.tscn"
+Global="*res://scripts/global.gd"
 
 [dialogue_manager]
 
