@@ -296,10 +296,10 @@ script = ExtResource("1_vsq5h")
 [node name="background" type="Sprite2D" parent="."]
 
 [node name="mercurio" type="Node2D" parent="."]
-position = Vector2(2, -9)
+position = Vector2(142, -28)
 
 [node name="mercurio_image" type="AnimatedSprite2D" parent="mercurio"]
-position = Vector2(39, 152)
+position = Vector2(39, 153)
 sprite_frames = SubResource("SpriteFrames_ayjd1")
 
 [node name="mercurio_button" type="Button" parent="mercurio"]
@@ -477,7 +477,7 @@ label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="litio" type="Node2D" parent="."]
-position = Vector2(-10, -4)
+position = Vector2(-17, 9)
 
 [node name="litio_image" type="AnimatedSprite2D" parent="litio"]
 position = Vector2(47, 48)
@@ -512,7 +512,7 @@ label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="cal" type="Node2D" parent="."]
-position = Vector2(41, 6)
+position = Vector2(11, 24)
 
 [node name="cal_image" type="AnimatedSprite2D" parent="cal"]
 position = Vector2(47, 38)
@@ -549,7 +549,7 @@ label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="ladrillo" type="Node2D" parent="."]
-position = Vector2(42, 9)
+position = Vector2(-20, 21)
 
 [node name="ladrillo_image" type="AnimatedSprite2D" parent="ladrillo"]
 position = Vector2(101, 34)
@@ -586,7 +586,7 @@ label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="magnesio" type="Node2D" parent="."]
-position = Vector2(-2, 46)
+position = Vector2(61, 14)
 
 [node name="magnesio_image" type="AnimatedSprite2D" parent="magnesio"]
 position = Vector2(47, 38)
@@ -623,7 +623,7 @@ label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="oropimente" type="Node2D" parent="."]
-position = Vector2(22, 21)
+position = Vector2(53, -13)
 
 [node name="oropimente_image" type="AnimatedSprite2D" parent="oropimente"]
 position = Vector2(81, 64)
