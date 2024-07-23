@@ -1,22 +1,36 @@
-[gd_scene load_steps=34 format=3 uid="uid://ba224ivygvark"]
+[gd_scene load_steps=48 format=3 uid="uid://ba224ivygvark"]
 
 [ext_resource type="Script" path="res://scripts/storage.gd" id="1_vsq5h"]
 [ext_resource type="Texture2D" uid="uid://ds757kjaps2ru" path="res://assets/objects/elementos1.png" id="2_eq8v6"]
+[ext_resource type="Texture2D" uid="uid://82j23v514j40" path="res://assets/objects/elementos-mark1.png" id="3_cr4ym"]
 [ext_resource type="Texture2D" uid="uid://certid8pw5qlp" path="res://assets/objects/flecha.png" id="4_emcqx"]
 [ext_resource type="Texture2D" uid="uid://cq5nprahktqws" path="res://assets/objects/elementos2.png" id="4_jo4m1"]
 [ext_resource type="Texture2D" uid="uid://vf71107nnj8u" path="res://assets/objects/elementos3.png" id="5_k4a7q"]
+[ext_resource type="Texture2D" uid="uid://bcgu0qb0tkeh2" path="res://assets/objects/elementos-mark2.png" id="5_w4tmq"]
 [ext_resource type="Texture2D" uid="uid://bs0p08p5nybly" path="res://assets/objects/elementos4.png" id="6_6syqx"]
 [ext_resource type="Texture2D" uid="uid://8qxcbamdjp5d" path="res://assets/objects/elementos5.png" id="7_2m83c"]
+[ext_resource type="Texture2D" uid="uid://pv48jnwkreac" path="res://assets/objects/elementos-mark3.png" id="7_edfff"]
 [ext_resource type="Texture2D" uid="uid://dl7etrhvqhq2o" path="res://assets/objects/elementos6.png" id="8_h332c"]
+[ext_resource type="Texture2D" uid="uid://xeo1fx8xaujk" path="res://assets/objects/elementos-mark4.png" id="9_hxv0l"]
 [ext_resource type="Texture2D" uid="uid://dowyw736u67wc" path="res://assets/objects/elementos7.png" id="9_q1crl"]
 [ext_resource type="Texture2D" uid="uid://ce55s8rgxbwp2" path="res://assets/objects/elementos8.png" id="10_b2h2m"]
 [ext_resource type="Texture2D" uid="uid://dk4ffsxn443k5" path="res://assets/objects/elementos9.png" id="11_44i11"]
+[ext_resource type="Texture2D" uid="uid://c7jrlw2modemi" path="res://assets/objects/elementos-mark5.png" id="11_egilq"]
 [ext_resource type="Texture2D" uid="uid://cwvpfrifrgw2d" path="res://assets/objects/elementos10.png" id="12_m8uwq"]
 [ext_resource type="Texture2D" uid="uid://ce4nl5b4qf2xe" path="res://assets/objects/elementos11.png" id="13_2wea5"]
+[ext_resource type="Texture2D" uid="uid://d3mrafq360mym" path="res://assets/objects/elementos-mark6.png" id="13_7q24i"]
 [ext_resource type="Texture2D" uid="uid://di6o20jxsbrqs" path="res://assets/objects/elementos12.png" id="14_4qg25"]
+[ext_resource type="Texture2D" uid="uid://b546df6vppmik" path="res://assets/objects/elementos-mark7.png" id="15_ilwas"]
 [ext_resource type="Texture2D" uid="uid://bb371pu0y7c5j" path="res://assets/objects/elementos13.png" id="15_nu26u"]
 [ext_resource type="Texture2D" uid="uid://bib5hkqqos2pl" path="res://assets/objects/elementos14.png" id="16_g7les"]
 [ext_resource type="Texture2D" uid="uid://bg2lpyp8lb7ci" path="res://assets/backgrounds/storage.png" id="17_8nlno"]
+[ext_resource type="Texture2D" uid="uid://dfl6jnjjr3mok" path="res://assets/objects/elementos-mark8.png" id="17_rvkmu"]
+[ext_resource type="Texture2D" uid="uid://c2ayfvsagxq80" path="res://assets/objects/elementos-mark9.png" id="19_gsqrw"]
+[ext_resource type="Texture2D" uid="uid://eekm6inx0rmk" path="res://assets/objects/elementos-mark10.png" id="21_mc210"]
+[ext_resource type="Texture2D" uid="uid://c40pa3d8l6nxv" path="res://assets/objects/elementos-mark11.png" id="23_ukm17"]
+[ext_resource type="Texture2D" uid="uid://wc1uudqvu5p4" path="res://assets/objects/elementos-mark12.png" id="25_u1qio"]
+[ext_resource type="Texture2D" uid="uid://cyxbxweebayq7" path="res://assets/objects/elementos-mark13.png" id="27_hl8d5"]
+[ext_resource type="Texture2D" uid="uid://dv4pyjkyqrcjo" path="res://assets/objects/elementos-mark14.png" id="29_w3v3j"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ayjd1"]
 animations = [{
@@ -30,7 +44,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_emcqx")
+"texture": ExtResource("3_cr4ym")
 }],
 "loop": true,
 "name": &"marcado",
@@ -55,7 +69,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_emcqx")
+"texture": ExtResource("5_w4tmq")
 }],
 "loop": true,
 "name": &"marcado",
@@ -74,7 +88,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_emcqx")
+"texture": ExtResource("7_edfff")
 }],
 "loop": true,
 "name": &"marcado",
@@ -93,7 +107,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_emcqx")
+"texture": ExtResource("9_hxv0l")
 }],
 "loop": true,
 "name": &"marcado",
@@ -112,7 +126,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_emcqx")
+"texture": ExtResource("11_egilq")
 }],
 "loop": true,
 "name": &"marcado",
@@ -131,7 +145,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_emcqx")
+"texture": ExtResource("13_7q24i")
 }],
 "loop": true,
 "name": &"marcado",
@@ -150,7 +164,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_emcqx")
+"texture": ExtResource("15_ilwas")
 }],
 "loop": true,
 "name": &"marcado",
@@ -169,7 +183,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_emcqx")
+"texture": ExtResource("17_rvkmu")
 }],
 "loop": true,
 "name": &"marcado",
@@ -188,7 +202,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_emcqx")
+"texture": ExtResource("19_gsqrw")
 }],
 "loop": true,
 "name": &"marcado",
@@ -207,7 +221,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_emcqx")
+"texture": ExtResource("21_mc210")
 }],
 "loop": true,
 "name": &"marcado",
@@ -226,7 +240,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_emcqx")
+"texture": ExtResource("23_ukm17")
 }],
 "loop": true,
 "name": &"marcado",
@@ -245,7 +259,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_emcqx")
+"texture": ExtResource("25_u1qio")
 }],
 "loop": true,
 "name": &"marcado",
@@ -264,7 +278,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_emcqx")
+"texture": ExtResource("27_hl8d5")
 }],
 "loop": true,
 "name": &"marcado",
@@ -283,7 +297,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_emcqx")
+"texture": ExtResource("29_w3v3j")
 }],
 "loop": true,
 "name": &"marcado",
@@ -823,6 +837,7 @@ offset_bottom = 161.0
 rotation = -3.13817
 scale = Vector2(0.391782, 0.362234)
 pivot_offset = Vector2(36.4382, 26.9893)
+focus_mode = 0
 flat = true
 expand_icon = true
 
