@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ubed76q63n55"]
+
+[ext_resource type="AudioStream" uid="uid://cghatr4u35igb" path="res://assets/sounds/mouse_click.wav" id="2_fxhru"]
+[ext_resource type="Texture2D" uid="uid://m6ul8275advo" path="res://assets/backgrounds/barra.png" id="3_4yjcp"]
+[ext_resource type="Script" path="res://scripts/Click_Sound.gd" id="4_iw3tg"]
+
+[node name="Click_Sound" type="Node2D"]
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_fxhru")
+volume_db = -20.0
+
+[node name="Blank_Sprite" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(162, 90)
+scale = Vector2(1.19068, 1.07875)
+texture = ExtResource("3_4yjcp")
+script = ExtResource("4_iw3tg")
