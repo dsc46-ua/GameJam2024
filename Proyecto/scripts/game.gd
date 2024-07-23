@@ -17,13 +17,11 @@ func _ready():
 func _process(delta):
 	pass
 
-
-func _on_go_storage_pressed():
-	get_tree().change_scene_to_file("res://scenes/storage.tscn")
-
-
 func _on_go_storage_mouse_entered():
 	highlight(storage)
 
 func _on_go_storage_mouse_exited():
 	unhighlight(storage)
+
+func _on_go_storage_pressed():
+	get_tree().change_scene_to_file("res://scenes/storage.tscn")

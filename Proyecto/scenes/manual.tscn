@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://scripts/manual.gd" id="1_ud3kd"]
 [ext_resource type="Texture2D" uid="uid://cdwbwc1t5yj6q" path="res://assets/objects/manual.png" id="2_k8r8w"]
 
-
 [node name="manual" type="Node2D"]
 script = ExtResource("1_ud3kd")
 
@@ -12,7 +11,7 @@ position = Vector2(30, 101)
 scale = Vector2(0.210938, 0.203125)
 texture = ExtResource("2_k8r8w")
 
-[node name="Button" type="Button" parent="."]
+[node name="go_back_game" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
 offset_left = 23.0
 offset_top = 95.0
@@ -21,6 +20,10 @@ offset_bottom = 106.0
 
 [node name="manualPage1" type="Sprite2D" parent="."]
 
-[connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
-[connection signal="mouse_exited" from="Button" to="." method="_on_button_mouse_exited"]
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="button_up" from="go_back_game" to="." method="_on_button_button_up"]
+[connection signal="mouse_entered" from="go_back_game" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_entered" from="go_back_game" to="." method="_on_go_back_game_mouse_entered"]
+[connection signal="mouse_exited" from="go_back_game" to="." method="_on_button_mouse_exited"]
+[connection signal="mouse_exited" from="go_back_game" to="." method="_on_go_back_game_mouse_exited"]
+[connection signal="pressed" from="go_back_game" to="." method="_on_go_back_game_pressed"]
+[connection signal="pressed" from="go_back_game" to="." method="_on_button_pressed"]

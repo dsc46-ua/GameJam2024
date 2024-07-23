@@ -20,11 +20,11 @@ func highlight():
 func unhighlight():
 	base_manual.set_modulate(Color(1, 1, 1, 1))
 
-func _on_button_pressed():
+func _on_go_back_game_pressed():
 	get_tree().change_scene_to_file("res://scenes/displayed_manual.tscn")
-	
-func _on_button_mouse_entered():
+
+func _on_go_back_game_mouse_entered():
 	highlight()
 
-func _on_button_mouse_exited():
+func _on_go_back_game_mouse_exited():
 	unhighlight()
