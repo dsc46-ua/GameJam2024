@@ -1,14 +1,28 @@
-[gd_scene load_steps=20 format=3 uid="uid://ba224ivygvark"]
+[gd_scene load_steps=34 format=3 uid="uid://ba224ivygvark"]
 
 [ext_resource type="Script" path="res://scripts/storage.gd" id="1_vsq5h"]
-[ext_resource type="Texture2D" uid="uid://cr5ydqwomcukr" path="res://assets/objects/cruz.png" id="3_chgud"]
+[ext_resource type="Texture2D" uid="uid://ds757kjaps2ru" path="res://assets/objects/elementos1.png" id="2_eq8v6"]
 [ext_resource type="Texture2D" uid="uid://certid8pw5qlp" path="res://assets/objects/flecha.png" id="4_emcqx"]
+[ext_resource type="Texture2D" uid="uid://cq5nprahktqws" path="res://assets/objects/elementos2.png" id="4_jo4m1"]
+[ext_resource type="Texture2D" uid="uid://vf71107nnj8u" path="res://assets/objects/elementos3.png" id="5_k4a7q"]
+[ext_resource type="Texture2D" uid="uid://bs0p08p5nybly" path="res://assets/objects/elementos4.png" id="6_6syqx"]
+[ext_resource type="Texture2D" uid="uid://8qxcbamdjp5d" path="res://assets/objects/elementos5.png" id="7_2m83c"]
+[ext_resource type="Texture2D" uid="uid://dl7etrhvqhq2o" path="res://assets/objects/elementos6.png" id="8_h332c"]
+[ext_resource type="Texture2D" uid="uid://dowyw736u67wc" path="res://assets/objects/elementos7.png" id="9_q1crl"]
+[ext_resource type="Texture2D" uid="uid://ce55s8rgxbwp2" path="res://assets/objects/elementos8.png" id="10_b2h2m"]
+[ext_resource type="Texture2D" uid="uid://dk4ffsxn443k5" path="res://assets/objects/elementos9.png" id="11_44i11"]
+[ext_resource type="Texture2D" uid="uid://cwvpfrifrgw2d" path="res://assets/objects/elementos10.png" id="12_m8uwq"]
+[ext_resource type="Texture2D" uid="uid://ce4nl5b4qf2xe" path="res://assets/objects/elementos11.png" id="13_2wea5"]
+[ext_resource type="Texture2D" uid="uid://di6o20jxsbrqs" path="res://assets/objects/elementos12.png" id="14_4qg25"]
+[ext_resource type="Texture2D" uid="uid://bb371pu0y7c5j" path="res://assets/objects/elementos13.png" id="15_nu26u"]
+[ext_resource type="Texture2D" uid="uid://bib5hkqqos2pl" path="res://assets/objects/elementos14.png" id="16_g7les"]
+[ext_resource type="Texture2D" uid="uid://bg2lpyp8lb7ci" path="res://assets/backgrounds/storage.png" id="17_8nlno"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ayjd1"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_chgud")
+"texture": ExtResource("2_eq8v6")
 }],
 "loop": true,
 "name": &"default",
@@ -33,7 +47,7 @@ font_size = 6
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_chgud")
+"texture": ExtResource("4_jo4m1")
 }],
 "loop": true,
 "name": &"default",
@@ -52,7 +66,7 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_chgud")
+"texture": ExtResource("5_k4a7q")
 }],
 "loop": true,
 "name": &"default",
@@ -71,7 +85,7 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_chgud")
+"texture": ExtResource("6_6syqx")
 }],
 "loop": true,
 "name": &"default",
@@ -90,7 +104,7 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_chgud")
+"texture": ExtResource("7_2m83c")
 }],
 "loop": true,
 "name": &"default",
@@ -109,7 +123,7 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_chgud")
+"texture": ExtResource("8_h332c")
 }],
 "loop": true,
 "name": &"default",
@@ -128,7 +142,7 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_chgud")
+"texture": ExtResource("9_q1crl")
 }],
 "loop": true,
 "name": &"default",
@@ -147,7 +161,7 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_chgud")
+"texture": ExtResource("10_b2h2m")
 }],
 "loop": true,
 "name": &"default",
@@ -166,7 +180,7 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_chgud")
+"texture": ExtResource("11_44i11")
 }],
 "loop": true,
 "name": &"default",
@@ -185,7 +199,7 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_chgud")
+"texture": ExtResource("12_m8uwq")
 }],
 "loop": true,
 "name": &"default",
@@ -204,7 +218,7 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_chgud")
+"texture": ExtResource("13_2wea5")
 }],
 "loop": true,
 "name": &"default",
@@ -223,7 +237,7 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_chgud")
+"texture": ExtResource("14_4qg25")
 }],
 "loop": true,
 "name": &"default",
@@ -242,7 +256,7 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_chgud")
+"texture": ExtResource("15_nu26u")
 }],
 "loop": true,
 "name": &"default",
@@ -261,7 +275,7 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_chgud")
+"texture": ExtResource("16_g7les")
 }],
 "loop": true,
 "name": &"default",
@@ -293,6 +307,7 @@ offset_left = 29.0
 offset_top = 143.0
 offset_right = 50.0
 offset_bottom = 163.0
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="name" type="Label" parent="mercurio"]
@@ -328,6 +343,7 @@ offset_left = -131.0
 offset_top = 115.0
 offset_right = -110.0
 offset_bottom = 135.0
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="name" type="Label" parent="estanyo"]
@@ -363,6 +379,7 @@ offset_left = 139.0
 offset_top = 142.0
 offset_right = 160.0
 offset_bottom = 162.0
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="name" type="Label" parent="oro"]
@@ -398,6 +415,7 @@ offset_left = 36.0
 offset_top = 29.0
 offset_right = 57.0
 offset_bottom = 49.0
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="name" type="Label" parent="cobre"]
@@ -434,6 +452,7 @@ offset_left = 37.0
 offset_top = 27.0
 offset_right = 58.0
 offset_bottom = 47.0
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="name" type="Label" parent="hierro"]
@@ -465,10 +484,11 @@ position = Vector2(47, 48)
 sprite_frames = SubResource("SpriteFrames_4t1h4")
 
 [node name="litio_button" type="Button" parent="litio"]
-offset_left = 37.0
+offset_left = 32.0
 offset_top = 38.0
-offset_right = 58.0
+offset_right = 60.0
 offset_bottom = 58.0
+flat = true
 
 [node name="name" type="Label" parent="litio"]
 visible = false
@@ -499,10 +519,12 @@ position = Vector2(47, 38)
 sprite_frames = SubResource("SpriteFrames_i4rkc")
 
 [node name="cal_button" type="Button" parent="cal"]
-offset_left = 36.0
-offset_top = 29.0
-offset_right = 57.0
-offset_bottom = 49.0
+offset_left = 35.0
+offset_top = 31.0
+offset_right = 56.0
+offset_bottom = 51.0
+scale = Vector2(1.12207, 0.596121)
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="name" type="Label" parent="cal"]
@@ -535,9 +557,11 @@ sprite_frames = SubResource("SpriteFrames_xagde")
 
 [node name="ladrillo_button" type="Button" parent="ladrillo"]
 offset_left = 91.0
-offset_top = 25.0
+offset_top = 23.0
 offset_right = 112.0
-offset_bottom = 45.0
+offset_bottom = 43.0
+scale = Vector2(0.944846, 1.08)
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="name" type="Label" parent="ladrillo"]
@@ -569,10 +593,12 @@ position = Vector2(47, 38)
 sprite_frames = SubResource("SpriteFrames_i2en0")
 
 [node name="magnesio_button" type="Button" parent="magnesio"]
-offset_left = 36.0
-offset_top = 29.0
-offset_right = 57.0
-offset_bottom = 49.0
+offset_left = 33.0
+offset_top = 34.0
+offset_right = 54.0
+offset_bottom = 54.0
+scale = Vector2(1.4878, 0.878564)
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="name" type="Label" parent="magnesio"]
@@ -604,10 +630,12 @@ position = Vector2(81, 64)
 sprite_frames = SubResource("SpriteFrames_g3xs4")
 
 [node name="oropimente_button" type="Button" parent="oropimente"]
-offset_left = 71.0
-offset_top = 54.0
-offset_right = 92.0
-offset_bottom = 74.0
+offset_left = 74.0
+offset_top = 58.0
+offset_right = 95.0
+offset_bottom = 78.0
+scale = Vector2(0.741745, 1.01849)
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="name" type="Label" parent="oropimente"]
@@ -642,6 +670,8 @@ offset_left = 214.0
 offset_top = 33.0
 offset_right = 235.0
 offset_bottom = 53.0
+scale = Vector2(1.03873, 1.22358)
+flat = true
 
 [node name="name" type="Label" parent="miel"]
 visible = false
@@ -671,10 +701,12 @@ position = Vector2(271, 42)
 sprite_frames = SubResource("SpriteFrames_nd16v")
 
 [node name="lupulo_button" type="Button" parent="lupulo"]
-offset_left = 261.0
-offset_top = 33.0
-offset_right = 282.0
-offset_bottom = 53.0
+offset_left = 260.0
+offset_top = 32.0
+offset_right = 281.0
+offset_bottom = 52.0
+scale = Vector2(1.03931, 1.17503)
+flat = true
 
 [node name="name" type="Label" parent="lupulo"]
 visible = false
@@ -704,10 +736,12 @@ position = Vector2(225, 84)
 sprite_frames = SubResource("SpriteFrames_a0ak5")
 
 [node name="jengibre_button" type="Button" parent="jengibre"]
-offset_left = 215.0
-offset_top = 74.0
-offset_right = 236.0
-offset_bottom = 94.0
+offset_left = 213.0
+offset_top = 70.0
+offset_right = 234.0
+offset_bottom = 90.0
+scale = Vector2(1.14457, 1.43493)
+flat = true
 
 [node name="name" type="Label" parent="jengibre"]
 visible = false
@@ -741,6 +775,8 @@ offset_left = 260.0
 offset_top = 74.0
 offset_right = 281.0
 offset_bottom = 94.0
+scale = Vector2(1.09076, 1.24052)
+flat = true
 
 [node name="name" type="Label" parent="canela"]
 visible = false
@@ -771,12 +807,18 @@ offset_bottom = 161.0
 rotation = -3.13817
 scale = Vector2(0.391782, 0.362234)
 pivot_offset = Vector2(36.4382, 26.9893)
+flat = true
 expand_icon = true
 
 [node name="go_back_sprite" type="Sprite2D" parent="go_back"]
 position = Vector2(14.5411, 13.2375)
 scale = Vector2(1.20755, 1.20306)
 texture = ExtResource("4_emcqx")
+
+[node name="Storage" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(160, 90)
+texture = ExtResource("17_8nlno")
 
 [connection signal="mouse_entered" from="mercurio/mercurio_button" to="." method="_on_mercurio_button_mouse_entered"]
 [connection signal="mouse_exited" from="mercurio/mercurio_button" to="." method="_on_mercurio_button_mouse_exited"]
