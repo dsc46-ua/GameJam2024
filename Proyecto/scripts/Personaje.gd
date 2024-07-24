@@ -10,16 +10,22 @@ func _ready():
 	match(Global.currentScene):
 		0:
 			character.play("witch_neutral")
+			Global.character = "witch"
 		1:
 			character.play("goblin_neutral")
+			Global.character = "goblin"
 		2:
 			character.play("one_eye_neutral")
+			Global.character = "one_eye"
 		3:
 			character.play("pickle_neutral")
+			Global.character = "pickle"
 		4:
-			character.play("witch_neutral")
+			character.play("witch2_neutral")
+			Global.character = "witch2"
 		5:
 			character.play("buffed_guy_neutral")
+			Global.character = "buffed_guy"
 
 	characterAnimation()
 	$Button.visibility_changed
@@ -55,6 +61,8 @@ func _on_button_button_up():
 				DialogueManager.show_example_dialogue_balloon(load("res://dialogue/main.dialogue"), "witch2")
 			"buffed_guy_neutral":
 				DialogueManager.show_example_dialogue_balloon(load("res://dialogue/main.dialogue"), "buffed_guy")
+
+
 
 
 

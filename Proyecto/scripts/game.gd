@@ -10,7 +10,7 @@ func unhighlight(image):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	$ColorRect.modulate = Color(0,0,0,0)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -31,3 +31,22 @@ func _on_maquina_button_pressed():
 			Global.bool_fade = false
 			$"Vase/Filling".play("fill")
 			Global.bool_quieto = false
+
+func puntuar_pocion() -> void:
+	# rango ingredieeentes
+	if  (1 <= Global.ing1 or Global.ing1 <= 14) or (1 <= Global.ing2 or Global.ing2 <= 14) or (1 <= Global.ing3 or Global.ing3 <= 14):
+		print("Error: Los índices deben estar entre 1 y 14.")
+		return
+	
+	var suma = Global.puntuacion[Global.ing1 - 1] + Global.puntuacion[Global.ing2 - 1] + Global.puntuacion[Global.ing3 - 1]
+	#Aqui hay que ver como tratar seeegun el peresonaje
+	var sufijo: String = ""
+	if suma >= 0 and suma <= 24:
+		sufijo = "_angry"
+	elif suma >= 25 and suma <= 49:
+		sufijo = "_neutral"
+	elif suma >= 50:
+		sufijo = "_happy"
+	
+	var animacion: String = Global.character + sufijo
+	$Personaje/Personaje.play(animacion)
