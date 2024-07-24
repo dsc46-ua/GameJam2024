@@ -56,6 +56,7 @@ func puntuar_pocion() -> void:
 	elif suma >= 50:
 		sufijo = "_happy"
 	
-	var animacion: String = Global.character + sufijo
+	Global.animacion = Global.character + sufijo
 	#CUIDADOOOO NO VAAAAA
-	$Personaje/Personaje.play(animacion)
+	var nodo_hijo = get_node("Personaje")
+	nodo_hijo.cargarExpresion()

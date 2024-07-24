@@ -244,7 +244,6 @@ position = Vector2(-21, 59)
 scale = Vector2(0.772589, 0.714457)
 sprite_frames = SubResource("SpriteFrames_b30cg")
 animation = &"witch_neutral"
-autoplay = "witch_neutral"
 
 [node name="movement_player" type="AnimationPlayer" parent="."]
 libraries = {

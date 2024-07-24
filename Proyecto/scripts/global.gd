@@ -6,6 +6,7 @@ extends Node2D
 @onready var ing3 = 0
 @onready var puntuacion = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 @onready var character = "witch"
+@onready var animacion = "witch_neutral"
 
 #Overall score
 @onready var score = 0
