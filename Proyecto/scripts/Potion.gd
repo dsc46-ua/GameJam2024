@@ -58,7 +58,7 @@ func _on_filling_animation_finished():
 		Global.ing1 = 0
 		Global.ing2 = 0
 		Global.ing3 = 0
-		#Ni idea
-		Global.showExitAnimation = true
-		$"../Personaje".characterAnimation()
+		
+		Global.cambiar_animacion = true
+
 
