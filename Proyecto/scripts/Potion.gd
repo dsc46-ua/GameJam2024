@@ -48,11 +48,11 @@ func _on_filling_animation_finished():
 		$"../ColorRect".modulate = Color("Black")
 		await get_tree().create_timer(2).timeout
 		filling.play("default")
+		var padre = get_parent()
+		padre.puntuar_pocion()
 		$"../AnimationPlayer".play("Fade in")
 		await get_tree().create_timer(3).timeout
 		$"../ColorRect".modulate = Color(0,0,0,0)
-		var padre = get_parent()
-		padre.puntuar_pocion()
 		Global.bool_fade = true
 		Global.bool_conversacion = false
 		Global.ing1 = 0
