@@ -35,7 +35,11 @@ func _on_maquina_button_pressed():
 func _on_options_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/Options.tscn")
 
+func _on_options_button_mouse_entered():
+	$Options_button.modulate = Color(1, 1, 1, 0.5)
 
+func _on_options_button_mouse_exited():
+	$Options_button.modulate = Color(1, 1, 1, 1)
 
 func puntuar_pocion() -> void:
 	# rango ingredieeentes
@@ -55,9 +59,3 @@ func puntuar_pocion() -> void:
 	var animacion: String = Global.character + sufijo
 	#CUIDADOOOO NO VAAAAA
 	$Personaje/Personaje.play(animacion)
-
-func _on_options_button_mouse_entered():
-	$Options_button.modulate = Color(1, 1, 1, 0.5)
-
-func _on_options_button_mouse_exited():
-	$Options_button.modulate = Color(1, 1, 1, 1)

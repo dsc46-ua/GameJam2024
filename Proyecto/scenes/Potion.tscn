@@ -59,8 +59,8 @@ sprite_frames = SubResource("SpriteFrames_w5ybk")
 autoplay = "default"
 
 [connection signal="animation_changed" from="Filling" to="." method="_on_filling_animation_changed"]
-[connection signal="animation_finished" from="Filling" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="animation_finished" from="Filling" to="." method="_on_filling_animation_finished"]
+[connection signal="animation_finished" from="Filling" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="animation_finished" from="Filling" to="Filling" method="_on_animation_finished"]
 [connection signal="animation_looped" from="Filling" to="." method="_on_filling_animation_looped"]
 [connection signal="sprite_frames_changed" from="Filling" to="." method="_on_filling_sprite_frames_changed"]
