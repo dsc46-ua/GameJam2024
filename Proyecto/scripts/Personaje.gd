@@ -41,7 +41,7 @@ func _on_animation_player_animation_finished(entrar):
 	Global.bool_quieto = true
 
 func _on_button_button_up():
-	if movement.current_animation == "quieto":
+	if movement.current_animation == "quieto" and Global.bool_fade:
 		DialogueManager.show_example_dialogue_balloon(load("res://dialogue/main.dialogue"), "start")
 
 

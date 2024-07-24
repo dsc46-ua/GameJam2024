@@ -29,5 +29,6 @@ func _on_go_storage_pressed():
 func _on_maquina_button_pressed():
 	if Global.bool_quieto and $"Vase/Filling".animation == "default":
 		if Global.ing1 != 0 and Global.ing2 != 0 and Global.ing3 != 0:
+			Global.bool_fade = false
 			$"Vase/Filling".play("fill")
 			Global.bool_quieto = false

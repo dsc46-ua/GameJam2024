@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://m6ul8275advo" path="res://assets/backgrounds/barra.png" id="6_74icp"]
 [ext_resource type="PackedScene" uid="uid://ubed76q63n55" path="res://scenes/click_sound.tscn" id="7_p01x5"]
 [ext_resource type="PackedScene" uid="uid://c5v0gey8vd88n" path="res://scenes/Potion.tscn" id="8_cqnt2"]
-[ext_resource type="Texture2D" uid="uid://fe8qyxndoo4w" path="res://assets/objects/icon.svg" id="8_p1dxa"]
+[ext_resource type="Texture2D" uid="uid://fe8qyxndoo4w" path="res://icon.svg" id="8_p1dxa"]
 
 [sub_resource type="Animation" id="Animation_yy4rb"]
 resource_name = "Fade in"

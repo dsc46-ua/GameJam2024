@@ -51,6 +51,7 @@ func _on_filling_animation_finished():
 		$"../AnimationPlayer".play("Fade in")
 		await get_tree().create_timer(3).timeout
 		$"../ColorRect".modulate = Color(0,0,0,0)
+		Global.bool_fade = true
 		Global.ing1 = 0
 		Global.ing2 = 0
 		Global.ing3 = 0
