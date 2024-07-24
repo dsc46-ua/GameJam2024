@@ -47,7 +47,7 @@ popup/item_2/id = 2
 layout_mode = 2
 text = "Back"
 
-[connection signal="value_changed" from="MarginContainer/VBoxContainer/Volume" to="." method="_on_h_slider_value_changed"]
 [connection signal="value_changed" from="MarginContainer/VBoxContainer/Volume" to="." method="_on_volume_value_changed"]
+[connection signal="value_changed" from="MarginContainer/VBoxContainer/Volume" to="." method="_on_h_slider_value_changed"]
 [connection signal="item_selected" from="MarginContainer/VBoxContainer/Resolution" to="." method="_on_resolution_item_selected"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b4k58pxg5hxpg"]
+[gd_scene load_steps=13 format=3 uid="uid://b4k58pxg5hxpg"]
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_5g3eh"]
 [ext_resource type="PackedScene" uid="uid://dbsw33e8qsbqi" path="res://scenes/Personaje.tscn" id="2_fjr0y"]
@@ -7,6 +7,61 @@
 [ext_resource type="Texture2D" uid="uid://m6ul8275advo" path="res://assets/backgrounds/barra.png" id="6_74icp"]
 [ext_resource type="PackedScene" uid="uid://ubed76q63n55" path="res://scenes/click_sound.tscn" id="7_p01x5"]
 [ext_resource type="PackedScene" uid="uid://c5v0gey8vd88n" path="res://scenes/Potion.tscn" id="8_cqnt2"]
+[ext_resource type="Texture2D" uid="uid://fe8qyxndoo4w" path="res://assets/objects/icon.svg" id="8_p1dxa"]
+
+[sub_resource type="Animation" id="Animation_yy4rb"]
+resource_name = "Fade in"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_2to6t"]
+resource_name = "Fade out"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_xpc45"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uyte2"]
+_data = {
+"Fade in": SubResource("Animation_yy4rb"),
+"Fade out": SubResource("Animation_2to6t"),
+"RESET": SubResource("Animation_xpc45")
+}
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_5g3eh")
@@ -43,9 +98,40 @@ texture = ExtResource("6_74icp")
 visible = false
 
 [node name="Vase" parent="." instance=ExtResource("8_cqnt2")]
-position = Vector2(270, 121)
+position = Vector2(186, 125)
+scale = Vector2(0.750027, 0.630662)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = 3
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 346.0
+offset_bottom = 194.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../ColorRect")
+libraries = {
+"": SubResource("AnimationLibrary_uyte2")
+}
+
+[node name="Maquina" type="Sprite2D" parent="."]
+position = Vector2(258, 117)
+scale = Vector2(0.850608, 0.414761)
+texture = ExtResource("8_p1dxa")
+
+[node name="maquina_button" type="Button" parent="Maquina"]
+offset_left = -63.484
+offset_top = -65.0977
+offset_right = -55.484
+offset_bottom = -57.0977
+scale = Vector2(15.9177, 16.3286)
+focus_mode = 0
+flat = true
 
 [connection signal="mouse_entered" from="go_storage" to="." method="_on_go_storage_mouse_entered"]
 [connection signal="mouse_exited" from="go_storage" to="." method="_on_go_storage_mouse_exited"]
 [connection signal="pressed" from="go_storage" to="." method="_on_go_storage_pressed"]
 [connection signal="pressed" from="go_storage" to="manual" method="_on_button_pressed"]
+[connection signal="pressed" from="Maquina/maquina_button" to="." method="_on_maquina_button_pressed"]

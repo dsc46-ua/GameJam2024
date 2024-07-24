@@ -57,7 +57,7 @@ _data = {
 "RESET": SubResource("Animation_xpc45")
 }
 
-[node name="Node2D" type="Node2D"]
+[node name="FadeIntro" type="Node2D"]
 script = ExtResource("1_bvvtf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

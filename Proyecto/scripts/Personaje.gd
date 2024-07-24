@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var character : AnimatedSprite2D = $Personaje
-@onready var movement : AnimationPlayer = $AnimationPlayer
+@onready var movement : AnimationPlayer = $movement_player
 
 #Selection of the character and their entry
 
@@ -36,11 +36,15 @@ func characterAnimation():
 		Global.showExitAnimation = false
 		Global.currentScene += 1
 
-
 func _on_animation_player_animation_finished(entrar):
 	movement.play("quieto")
+	Global.bool_quieto = true
 
 func _on_button_button_up():
 	if movement.current_animation == "quieto":
 		DialogueManager.show_example_dialogue_balloon(load("res://dialogue/main.dialogue"), "start")
+
+
+
+
 

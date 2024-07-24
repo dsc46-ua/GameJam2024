@@ -13,6 +13,7 @@ extends Node2D
 #Controls that there is not any repetition of the entry
 @onready var showEntryAnimation = true
 @onready var showExitAnimation = false
+@onready var bool_quieto = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

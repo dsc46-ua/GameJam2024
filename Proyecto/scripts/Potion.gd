@@ -6,7 +6,8 @@ extends Sprite2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	filling.play("fill")
+	$"../ColorRect".modulate = Color(0,0,0,0)
+	filling.play("default")
 	match Global.ing1:
 		1:
 			col = Color(1,0,0,1)
@@ -38,14 +39,22 @@ func _ready():
 			color.modulate = Color(col)
 		14:
 			color.modulate = Color(col)
-			
-	
-
-
 
 func _on_filling_animation_finished():
 	if filling.animation == "fill":
-		filling.play("full")
-		Global.showExitAnimation = true;
-	
+		$Filling.play("full")
+		$"../AnimationPlayer".play("Fade out")
+		await get_tree().create_timer(1).timeout
+		$"../ColorRect".modulate = Color("Black")
+		await get_tree().create_timer(2).timeout
+		filling.play("default")
+		$"../AnimationPlayer".play("Fade in")
+		await get_tree().create_timer(3).timeout
+		$"../ColorRect".modulate = Color(0,0,0,0)
+		Global.ing1 = 0
+		Global.ing2 = 0
+		Global.ing3 = 0
+		#Ni idea
+		Global.showExitAnimation = true
+		$"../Personaje".characterAnimation()
 
