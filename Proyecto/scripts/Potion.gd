@@ -46,4 +46,6 @@ func _ready():
 func _on_filling_animation_finished():
 	if filling.animation == "fill":
 		filling.play("full")
+		Global.showExitAnimation = true;
+	
 
