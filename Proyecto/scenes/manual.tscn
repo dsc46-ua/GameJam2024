@@ -21,8 +21,8 @@ offset_bottom = 106.0
 [node name="manualPage1" type="Sprite2D" parent="."]
 
 [connection signal="button_up" from="go_back_game" to="." method="_on_button_button_up"]
-[connection signal="mouse_entered" from="go_back_game" to="." method="_on_go_back_game_mouse_entered"]
 [connection signal="mouse_entered" from="go_back_game" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_entered" from="go_back_game" to="." method="_on_go_back_game_mouse_entered"]
 [connection signal="mouse_exited" from="go_back_game" to="." method="_on_button_mouse_exited"]
 [connection signal="mouse_exited" from="go_back_game" to="." method="_on_go_back_game_mouse_exited"]
 [connection signal="pressed" from="go_back_game" to="." method="_on_button_pressed"]

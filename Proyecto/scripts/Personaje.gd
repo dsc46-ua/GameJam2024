@@ -36,11 +36,15 @@ func characterAnimation():
 		movement.play("entrar")
 		Global.showEntryAnimation = false
 	
-	if(Global.showExitAnimation):
+	elif(Global.showExitAnimation):
 		movement.play("salir") 
 		Global.showEntryAnimation = true
 		Global.showExitAnimation = false
 		Global.currentScene += 1
+	
+	else:
+		movement.play("quieto")
+		Global.bool_quieto = true
 
 func _on_animation_player_animation_finished(entrar):
 	movement.play("quieto")
