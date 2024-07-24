@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dp3slcoas0i2i"]
+
+[ext_resource type="Script" path="res://scripts/Potion.gd" id="1_x86ft"]
+[ext_resource type="Texture2D" uid="uid://fe8qyxndoo4w" path="res://assets/objects/icon.svg" id="2_62aol"]
+[ext_resource type="PackedScene" uid="uid://c5v0gey8vd88n" path="res://scenes/Potion.tscn" id="3_xtfc8"]
+
+[node name="alchemy" type="Node2D"]
+script = ExtResource("1_x86ft")
+
+[node name="alchemy_table" type="Sprite2D" parent="."]
+position = Vector2(266, 119)
+scale = Vector2(-0.2925, 0.283979)
+texture = ExtResource("2_62aol")
+
+[node name="table_button" type="Button" parent="alchemy_table"]
+offset_left = -62.0
+offset_top = -61.0
+offset_right = 62.0
+offset_bottom = 63.0
+
+[node name="Vase" parent="." instance=ExtResource("3_xtfc8")]
+position = Vector2(219, 113)
