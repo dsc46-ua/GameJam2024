@@ -377,3 +377,4 @@ func _on_canela_button_mouse_exited():
 
 func _on_go_back_pressed():
 	get_tree().change_scene_to_file("res://scenes/game.tscn")
+	

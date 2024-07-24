@@ -1,15 +1,21 @@
 extends Control
 
-var music = AudioServer.get_bus_index("Music")
+var music_bus = AudioServer.get_bus_index("Music")
 
 func _ready():
-	$MarginContainer/VBoxContainer/Volume.value=db_to_linear(music)
+	# Ajustar la barra de volumen con el valor global
+	$MarginContainer/VBoxContainer/Volume.value = Global.volume
 
 func _on_back_pressed():
-	get_tree().change_scene_to_file("res://scenes/MainMenu.tscn")
+	if (Global.bool_playing):
+		get_tree().change_scene_to_file("res://scenes/game.tscn")
+	else :
+		get_tree().change_scene_to_file("res://scenes/MainMenu.tscn")
 
 func _on_volume_value_changed(value):
-	AudioServer.set_bus_volume_db(music,linear_to_db(value))
+	# Actualizar la variable global y el volumen del bus de audio
+	Global.volume = value
+	AudioServer.set_bus_volume_db(music_bus, linear_to_db(value))
 
 func _on_resolution_item_selected(index):
 	match index:
@@ -19,3 +25,4 @@ func _on_resolution_item_selected(index):
 			DisplayServer.window_set_size(Vector2i(1600,900))
 		2:
 			DisplayServer.window_set_size(Vector2i(1280,720))
+

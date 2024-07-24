@@ -830,12 +830,12 @@ label_settings = SubResource("LabelSettings_0n6s3")
 horizontal_alignment = 1
 
 [node name="go_back" type="Button" parent="."]
-offset_left = -25.0
-offset_top = 137.0
-offset_right = 5.0
-offset_bottom = 161.0
+offset_left = -27.0
+offset_top = 133.0
+offset_right = 3.00001
+offset_bottom = 157.0
 rotation = -3.13817
-scale = Vector2(0.391782, 0.362234)
+scale = Vector2(0.599939, 0.502319)
 pivot_offset = Vector2(36.4382, 26.9893)
 focus_mode = 0
 flat = true

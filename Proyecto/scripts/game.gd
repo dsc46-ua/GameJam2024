@@ -32,6 +32,11 @@ func _on_maquina_button_pressed():
 			$"Vase/Filling".play("fill")
 			Global.bool_quieto = false
 
+func _on_options_button_pressed():
+	get_tree().change_scene_to_file("res://scenes/Options.tscn")
+
+
+
 func puntuar_pocion() -> void:
 	# rango ingredieeentes
 	if  (1 > Global.ing1 or Global.ing1 > 14) or (1 > Global.ing2 or Global.ing2 > 14) or (1 > Global.ing3 or Global.ing3 > 14):
@@ -50,3 +55,9 @@ func puntuar_pocion() -> void:
 	var animacion: String = Global.character + sufijo
 	#CUIDADOOOO NO VAAAAA
 	$Personaje/Personaje.play(animacion)
+
+func _on_options_button_mouse_entered():
+	$Options_button.modulate = Color(1, 1, 1, 0.5)
+
+func _on_options_button_mouse_exited():
+	$Options_button.modulate = Color(1, 1, 1, 1)

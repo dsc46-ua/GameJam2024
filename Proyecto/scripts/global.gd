@@ -1,5 +1,6 @@
 extends Node2D
 
+@onready var volume: float = 1.0
 @onready var ing1 = 0
 @onready var ing2 = 0
 @onready var ing3 = 0
@@ -18,6 +19,7 @@ extends Node2D
 @onready var bool_quieto = false
 @onready var bool_conversacion = false
 @onready var bool_fade = true
+@onready var bool_playing = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
