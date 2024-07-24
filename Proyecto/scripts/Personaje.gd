@@ -30,6 +30,9 @@ func _ready():
 	characterAnimation()
 	$Button.visibility_changed
 
+func _process(delta):
+	character.play(Global.animacion)
+
 func characterAnimation():
 	#To make the character entry
 	if(Global.showEntryAnimation):
@@ -66,8 +69,8 @@ func _on_button_button_up():
 			"buffed_guy_neutral":
 				DialogueManager.show_example_dialogue_balloon(load("res://dialogue/main.dialogue"), "buffed_guy")
 
-
-
+func cargarExpresion():
+	character.play(Global.animacion)
 
 
 
