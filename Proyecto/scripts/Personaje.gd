@@ -58,19 +58,6 @@ func characterAnimation():
 		movement.queue("salir")
 		movement.queue("entrar")
 		Global.showEntryAnimation = false
-<<<<<<< HEAD
-	
-	elif(Global.showExitAnimation):
-		movement.play("salir") 
-		Global.showEntryAnimation = true
-		Global.showExitAnimation = false
-		Global.currentScene += 1
-	
-	else:
-		movement.play("quieto")
-		Global.bool_quieto = true
-=======
->>>>>>> daniel
 
 func _on_movement_player_animation_changed(old_name, new_name):
 	if movement.current_animation == "quieto":
