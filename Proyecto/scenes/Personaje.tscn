@@ -1,20 +1,62 @@
-[gd_scene load_steps=13 format=3 uid="uid://dbsw33e8qsbqi"]
+[gd_scene load_steps=23 format=3 uid="uid://dbsw33e8qsbqi"]
 
 [ext_resource type="Script" path="res://scripts/Personaje.gd" id="1_6krua"]
 [ext_resource type="Texture2D" uid="uid://d2rqb6ujv6x4r" path="res://assets/chars/char4-neutral.png" id="2_0yalc"]
+[ext_resource type="Texture2D" uid="uid://c58181ubyh1vt" path="res://assets/chars/char4-angry.png" id="2_a5rmo"]
+[ext_resource type="Texture2D" uid="uid://cnc7w51i0v5qt" path="res://assets/chars/char4-happy.png" id="3_1mfm0"]
 [ext_resource type="Texture2D" uid="uid://bufmix4tb0cyr" path="res://assets/chars/char2-neutral.png" id="3_shgpa"]
 [ext_resource type="Texture2D" uid="uid://ba1jbc5tqy56a" path="res://assets/chars/char1-neutral.png" id="4_vcbak"]
 [ext_resource type="Texture2D" uid="uid://dnugy5i6his70" path="res://assets/chars/char3-neutral.png" id="4_vetur"]
 [ext_resource type="Texture2D" uid="uid://cbmtfdat2gkb4" path="res://assets/chars/char5-neutral.png" id="5_3moy5"]
+[ext_resource type="Texture2D" uid="uid://bk4sg6c5uww1a" path="res://assets/chars/char2-angry.png" id="5_vjggc"]
+[ext_resource type="Texture2D" uid="uid://dpu7iny14oeks" path="res://assets/chars/char2-happy.png" id="6_her7k"]
+[ext_resource type="Texture2D" uid="uid://cww2ry1uooilv" path="res://assets/chars/char3-angry.png" id="8_6ypbu"]
+[ext_resource type="Texture2D" uid="uid://dv2cx2pj7uca0" path="res://assets/chars/char3-happy.png" id="9_v66w4"]
+[ext_resource type="Texture2D" uid="uid://bmyi083jfrx6m" path="res://assets/chars/char5-angry.png" id="11_ndvkx"]
+[ext_resource type="Texture2D" uid="uid://bw7wt05nyjh1l" path="res://assets/chars/char5-happy.png" id="12_cyiq0"]
+[ext_resource type="Texture2D" uid="uid://bhipve5igxgml" path="res://assets/chars/char1-angry.png" id="14_erb7h"]
+[ext_resource type="Texture2D" uid="uid://u0iyv1qba3mj" path="res://assets/chars/char1-happy.png" id="15_x2jps"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_b30cg"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a5rmo")
+}],
+"loop": true,
+"name": &"bufed_guy_angry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_1mfm0")
+}],
+"loop": true,
+"name": &"buffed_guy_happy",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_0yalc")
 }],
 "loop": true,
 "name": &"buffed_guy_neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_vjggc")
+}],
+"loop": true,
+"name": &"goblin_angry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_her7k")
+}],
+"loop": true,
+"name": &"goblin_happy",
 "speed": 5.0
 }, {
 "frames": [{
@@ -27,6 +69,22 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("8_6ypbu")
+}],
+"loop": true,
+"name": &"one_eye_angry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_v66w4")
+}],
+"loop": true,
+"name": &"one_eye_happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("4_vetur")
 }],
 "loop": true,
@@ -35,10 +93,66 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("11_ndvkx")
+}],
+"loop": true,
+"name": &"pickle_angry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_cyiq0")
+}],
+"loop": true,
+"name": &"pickle_happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("5_3moy5")
 }],
 "loop": true,
 "name": &"pickle_neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_erb7h")
+}],
+"loop": true,
+"name": &"witch2_angry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_x2jps")
+}],
+"loop": true,
+"name": &"witch2_happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_vcbak")
+}],
+"loop": true,
+"name": &"witch2_neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_erb7h")
+}],
+"loop": true,
+"name": &"witch_angry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_x2jps")
+}],
+"loop": true,
+"name": &"witch_happy",
 "speed": 5.0
 }, {
 "frames": [{
@@ -129,7 +243,7 @@ script = ExtResource("1_6krua")
 position = Vector2(-21, 59)
 scale = Vector2(0.772589, 0.714457)
 sprite_frames = SubResource("SpriteFrames_b30cg")
-animation = &"pickle_neutral"
+animation = &"witch2_happy"
 
 [node name="movement_player" type="AnimationPlayer" parent="."]
 libraries = {

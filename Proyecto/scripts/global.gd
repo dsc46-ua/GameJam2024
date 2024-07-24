@@ -14,8 +14,9 @@ extends Node2D
 @onready var showEntryAnimation = true
 @onready var showExitAnimation = false
 @onready var bool_quieto = false
+@onready var bool_conversacion = false
 @onready var bool_fade = true
-
+var puntuacion = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

@@ -1,5 +1,6 @@
-~ start
+~ witch
 
+witch
 Nathan: Buenas tardes.
 *El cliente iene pinta de estar teniendo un mal dia*
 - Que le pongo?
@@ -9,11 +10,14 @@ Nathan: Un cafe.
 - Un cafe solo?
 	Nathan: No, un café con leche por favor
 Enseguida se lo traigo
+do Global.puntuacion = [50, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+do Global.bool_conversacion = true
 
 => END
 
-~ bruja1
+~ goblin
 
+goblin
 Nathan: Buenas tardes.
 *El cliente iene pinta de estar teniendo un mal dia*
 - Que le pongo?
@@ -23,5 +27,75 @@ Nathan: Un cafe.
 - Un cafe solo?
 	Nathan: No, un café con leche por favor
 Enseguida se lo traigo
+do Global.puntuacion = [50, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+do Global.bool_conversacion = true
+
+=> END
+
+~ one_eye
+
+one_eye
+Nathan: Buenas tardes.
+*El cliente iene pinta de estar teniendo un mal dia*
+- Que le pongo?
+Nathan: Un cafe.
+- Como lo quiere?
+	Nathan: Con leche
+- Un cafe solo?
+	Nathan: No, un café con leche por favor
+Enseguida se lo traigo
+do Global.puntuacion = [50, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+do Global.bool_conversacion = true
+
+=> END
+
+~ pickle
+
+pickle
+Nathan: Buenas tardes.
+*El cliente iene pinta de estar teniendo un mal dia*
+- Que le pongo?
+Nathan: Un cafe.
+- Como lo quiere?
+	Nathan: Con leche
+- Un cafe solo?
+	Nathan: No, un café con leche por favor
+Enseguida se lo traigo
+do Global.puntuacion = [50, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+do Global.bool_conversacion = true
+
+=> END
+
+~ witch2
+
+witch2
+Nathan: Buenas tardes.
+*El cliente iene pinta de estar teniendo un mal dia*
+- Que le pongo?
+Nathan: Un cafe.
+- Como lo quiere?
+	Nathan: Con leche
+- Un cafe solo?
+	Nathan: No, un café con leche por favor
+Enseguida se lo traigo
+do Global.puntuacion = [50, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+do Global.bool_conversacion = true
+
+=> END
+
+~ buffed_guy
+
+buffed_guy
+Nathan: Buenas tardes.
+*El cliente iene pinta de estar teniendo un mal dia*
+- Que le pongo?
+Nathan: Un cafe.
+- Como lo quiere?
+	Nathan: Con leche
+- Un cafe solo?
+	Nathan: No, un café con leche por favor
+Enseguida se lo traigo
+do Global.puntuacion = [50, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+do Global.bool_conversacion = true
 
 => END

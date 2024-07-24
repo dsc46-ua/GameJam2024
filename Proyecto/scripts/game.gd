@@ -12,7 +12,6 @@ func unhighlight(image):
 func _ready():
 	pass
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
@@ -27,7 +26,7 @@ func _on_go_storage_pressed():
 	get_tree().change_scene_to_file("res://scenes/storage.tscn")
 
 func _on_maquina_button_pressed():
-	if Global.bool_quieto and $"Vase/Filling".animation == "default":
+	if Global.bool_quieto and $"Vase/Filling".animation == "default" and Global.bool_conversacion:
 		if Global.ing1 != 0 and Global.ing2 != 0 and Global.ing3 != 0:
 			Global.bool_fade = false
 			$"Vase/Filling".play("fill")
