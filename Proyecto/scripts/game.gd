@@ -26,12 +26,12 @@ func _on_go_storage_pressed():
 	get_tree().change_scene_to_file("res://scenes/storage.tscn")
 
 func _on_maquina_button_pressed():
-	if Global.bool_quieto and $"Vase/Filling".animation == "default" and Global.bool_conversacion:
+	if  $"Vase/Filling".animation == "default" and Global.bool_conversacion:
 		if Global.ing1 != 0 and Global.ing2 != 0 and Global.ing3 != 0:
 			Global.bool_fade = false
 			$"Vase/Filling".play("fill")
 			Global.bool_quieto = false
-
+#Global.bool_quieto and
 func _on_options_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/Options.tscn")
 
@@ -57,6 +57,3 @@ func puntuar_pocion() -> void:
 		sufijo = "_happy"
 	
 	Global.animacion = Global.character + sufijo
-	#CUIDADOOOO NO VAAAAA
-	var nodo_hijo = get_node("Personaje")
-	nodo_hijo.cargarExpresion()

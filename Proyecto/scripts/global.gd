@@ -7,6 +7,9 @@ extends Node2D
 @onready var puntuacion = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 @onready var character = "witch"
 @onready var animacion = "witch_neutral"
+@onready var cambiar_animacion = false
+@onready var barro = true
+
 
 #Overall score
 @onready var score = 0
