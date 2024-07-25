@@ -1,0 +1,114 @@
+[gd_scene load_steps=8 format=3 uid="uid://dppgr0ms14jjx"]
+
+[ext_resource type="Script" path="res://scripts/ending2.gd" id="1_e5kgi"]
+[ext_resource type="Texture2D" uid="uid://bg2lpyp8lb7ci" path="res://assets/backgrounds/storage.png" id="2_61olp"]
+[ext_resource type="Texture2D" uid="uid://certid8pw5qlp" path="res://assets/objects/flecha.png" id="3_adas7"]
+
+[sub_resource type="Animation" id="Animation_yy4rb"]
+resource_name = "Fade in"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_2to6t"]
+resource_name = "Fade out"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_xpc45"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uyte2"]
+_data = {
+"Fade in": SubResource("Animation_yy4rb"),
+"Fade out": SubResource("Animation_2to6t"),
+"RESET": SubResource("Animation_xpc45")
+}
+
+[node name="BadEnding" type="Node2D"]
+script = ExtResource("1_e5kgi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(162, 68)
+scale = Vector2(0.775841, 0.608189)
+texture = ExtResource("2_61olp")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 272.0
+offset_top = 143.0
+offset_right = 312.0
+offset_bottom = 175.0
+focus_mode = 0
+icon = ExtResource("3_adas7")
+flat = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 54.0
+offset_top = 129.0
+offset_right = 272.0
+offset_bottom = 171.0
+theme_override_font_sizes/font_size = 8
+text = "bbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaabadbadbadbadbadbadbadbadb"
+
+[node name="fondo" type="ColorRect" parent="."]
+z_index = -2
+offset_left = -6.0
+offset_top = -10.0
+offset_right = 34.0
+offset_bottom = 30.0
+scale = Vector2(8.46255, 4.91334)
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="fadeRect2" type="ColorRect" parent="."]
+z_index = 2
+offset_left = -6.0
+offset_top = -10.0
+offset_right = 34.0
+offset_bottom = 30.0
+scale = Vector2(8.46255, 4.91334)
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="fade2" type="AnimationPlayer" parent="."]
+root_node = NodePath("../fadeRect2")
+libraries = {
+"": SubResource("AnimationLibrary_uyte2")
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -24,7 +24,7 @@ animations = [{
 "texture": ExtResource("2_a5rmo")
 }],
 "loop": true,
-"name": &"bufed_guy_angry",
+"name": &"buffed_guy_angry",
 "speed": 5.0
 }, {
 "frames": [{
@@ -243,7 +243,7 @@ script = ExtResource("1_6krua")
 position = Vector2(-21, 59)
 scale = Vector2(0.772589, 0.714457)
 sprite_frames = SubResource("SpriteFrames_b30cg")
-animation = &"witch_neutral"
+animation = &"buffed_guy_angry"
 
 [node name="movement_player" type="AnimationPlayer" parent="."]
 libraries = {

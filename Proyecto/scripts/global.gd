@@ -9,13 +9,16 @@ extends Node2D
 @onready var animacion = "witch_neutral"
 @onready var cambiar_animacion = false
 @onready var barro = true
+@onready var cont_bien = 0
+@onready var cont_mal = 0
+
 
 
 #Overall score
 @onready var score = 0
 
 #Controls on which scene we are
-@onready var currentScene = 0
+@onready var currentScene = 5
 
 #Controls that there is not any repetition of the entry
 @onready var showEntryAnimation = true

@@ -10,6 +10,7 @@ func unhighlight(image):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Global.bool_playing = true
 	$ColorRect.modulate = Color(0,0,0,0)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -23,7 +24,8 @@ func _on_go_storage_mouse_exited():
 	unhighlight(storage)
 
 func _on_go_storage_pressed():
-	get_tree().change_scene_to_file("res://scenes/storage.tscn")
+	if Global.bool_quieto:
+		get_tree().change_scene_to_file("res://scenes/storage.tscn")
 
 func _on_maquina_button_pressed():
 	if  $"Vase/Filling".animation == "default" and Global.bool_conversacion:
@@ -33,7 +35,8 @@ func _on_maquina_button_pressed():
 			Global.bool_quieto = false
 #Global.bool_quieto and
 func _on_options_button_pressed():
-	get_tree().change_scene_to_file("res://scenes/Options.tscn")
+	if Global.bool_quieto:
+		get_tree().change_scene_to_file("res://scenes/Options.tscn")
 
 func _on_options_button_mouse_entered():
 	$Options_button.modulate = Color(1, 1, 1, 0.5)
@@ -51,9 +54,11 @@ func puntuar_pocion() -> void:
 	var sufijo: String = ""
 	if suma >= 0 and suma <= 24:
 		sufijo = "_angry"
+		Global.cont_mal += 1
 	elif suma >= 25 and suma <= 49:
 		sufijo = "_neutral"
 	elif suma >= 50:
 		sufijo = "_happy"
+		Global.cont_bien += 1
 	
 	Global.animacion = Global.character + sufijo

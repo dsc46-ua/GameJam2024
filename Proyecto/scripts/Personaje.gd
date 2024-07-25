@@ -31,8 +31,10 @@ func change_char():
 			Global.animacion = "buffed_guy_neutral"
 			Global.character = "buffed_guy"
 		6: 
-			#Aqui van endings
-			get_tree().change_scene_to_file("res://scenes/MainMenu.tscn")
+			if (Global.cont_bien - Global.cont_mal) >= 0:
+				get_tree().change_scene_to_file("res://scenes/good_ending.tscn")
+			else:
+				get_tree().change_scene_to_file("res://scenes/bad_ending.tscn")
 	characterAnimation()
 
 func _process(delta):
