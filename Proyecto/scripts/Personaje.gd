@@ -44,7 +44,7 @@ func _process(delta):
 				movement.play("salir")
 				#BARRO EN TI CONFIO
 				Global.barro = false
-				await get_tree().create_timer(4).timeout
+				await get_tree().create_timer(6).timeout
 				Global.barro = true
 				Global.currentScene += 1
 				Global.cambiar_animacion = false
