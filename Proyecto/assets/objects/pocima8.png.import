@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnugy5i6his70"
-path="res://.godot/imported/char3-happy.png-82f90cbb10d61a0d09ebe2a7f33c166e.ctex"
+uid="uid://kx6w76s0p2gq"
+path="res://.godot/imported/pocima8.png-c3db8ea5398d7b995039e67efca66837.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/chars/char3-happy.png"
-dest_files=["res://.godot/imported/char3-happy.png-82f90cbb10d61a0d09ebe2a7f33c166e.ctex"]
+source_file="res://assets/objects/pocima8.png"
+dest_files=["res://.godot/imported/pocima8.png-c3db8ea5398d7b995039e67efca66837.ctex"]
 
 [params]
 

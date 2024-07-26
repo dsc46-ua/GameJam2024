@@ -99,10 +99,6 @@ texture = ExtResource("6_74icp")
 [node name="Personaje" parent="." instance=ExtResource("2_fjr0y")]
 visible = false
 
-[node name="Vase" parent="." instance=ExtResource("8_cqnt2")]
-position = Vector2(191, 132)
-scale = Vector2(0.750027, 0.630662)
-
 [node name="ColorRect" type="ColorRect" parent="."]
 z_index = 4
 offset_left = -16.0
@@ -119,7 +115,7 @@ libraries = {
 }
 
 [node name="Maquina" type="Sprite2D" parent="."]
-position = Vector2(257, 106)
+position = Vector2(257, 109)
 scale = Vector2(0.793476, 0.744547)
 texture = ExtResource("7_cy42b")
 
@@ -148,6 +144,11 @@ volume_db = -20.0
 z_index = -4
 position = Vector2(160, 90)
 texture = ExtResource("10_1qaso")
+
+[node name="Vase" parent="." instance=ExtResource("8_cqnt2")]
+position = Vector2(191, 128)
+scale = Vector2(0.769209, 0.699941)
+offset = Vector2(0.3, -0.3)
 
 [connection signal="mouse_entered" from="go_storage" to="." method="_on_go_storage_mouse_entered"]
 [connection signal="mouse_exited" from="go_storage" to="." method="_on_go_storage_mouse_exited"]

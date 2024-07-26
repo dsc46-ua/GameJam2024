@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b48jn3skqg51f"
-path="res://.godot/imported/relleno_pocima3.png-1ec1b14085f0e355a5729ba4b8591ed5.ctex"
+uid="uid://dry2bib5cr7es"
+path="res://.godot/imported/pocima14.png-12be624c9925818eab48e348837e8f32.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/objects/relleno_pocima3.png"
-dest_files=["res://.godot/imported/relleno_pocima3.png-1ec1b14085f0e355a5729ba4b8591ed5.ctex"]
+source_file="res://assets/objects/pocima14.png"
+dest_files=["res://.godot/imported/pocima14.png-12be624c9925818eab48e348837e8f32.ctex"]
 
 [params]
 
