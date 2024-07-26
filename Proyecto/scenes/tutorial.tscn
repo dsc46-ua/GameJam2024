@@ -1,14 +1,70 @@
-[gd_scene load_steps=5 format=3 uid="uid://bfsl5ev2se808"]
+[gd_scene load_steps=10 format=3 uid="uid://cdkwtjs680sps"]
 
 [ext_resource type="PackedScene" uid="uid://dlr0f007e430m" path="res://scenes/manual.tscn" id="1_541sv"]
 [ext_resource type="Texture2D" uid="uid://m6ul8275advo" path="res://assets/backgrounds/barra.png" id="2_1loy5"]
+[ext_resource type="Texture2D" uid="uid://bebdw07v6r51b" path="res://assets/backgrounds/fondo_bar1.png" id="5_e1nox"]
 [ext_resource type="PackedScene" uid="uid://dbsw33e8qsbqi" path="res://scenes/Personaje.tscn" id="5_w6bqs"]
 [ext_resource type="Script" path="res://scripts/tutorial_character.gd" id="6_dobxo"]
+
+[sub_resource type="Animation" id="Animation_yy4rb"]
+resource_name = "Fade in"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_2to6t"]
+resource_name = "Fade out"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_xpc45"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uyte2"]
+_data = {
+"Fade in": SubResource("Animation_yy4rb"),
+"Fade out": SubResource("Animation_2to6t"),
+"RESET": SubResource("Animation_xpc45")
+}
 
 [node name="Tutorial" type="Node2D"]
 
 [node name="tutorial_manual" parent="." instance=ExtResource("1_541sv")]
-position = Vector2(156, -41)
+position = Vector2(164, -78)
+scale = Vector2(1.40008, 1.33096)
 script = null
 
 [node name="Barra" type="Sprite2D" parent="."]
@@ -19,3 +75,23 @@ texture = ExtResource("2_1loy5")
 [node name="personaje" parent="." instance=ExtResource("5_w6bqs")]
 z_index = -2
 script = ExtResource("6_dobxo")
+
+[node name="FondoBar1" type="Sprite2D" parent="."]
+z_index = -3
+position = Vector2(160, 90)
+texture = ExtResource("5_e1nox")
+
+[node name="fadeRectTut" type="ColorRect" parent="."]
+z_index = 3
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 346.0
+offset_bottom = 194.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="fade" type="AnimationPlayer" parent="."]
+root_node = NodePath("../fadeRectTut")
+libraries = {
+"": SubResource("AnimationLibrary_uyte2")
+}

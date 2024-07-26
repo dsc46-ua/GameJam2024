@@ -6,7 +6,7 @@ extends Node2D
 @onready var ing3 = 0
 @onready var puntuacion = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 @onready var character = "witch"
-@onready var animacion = "witch_neutral"
+@onready var animacion = "none"
 @onready var cambiar_animacion = false
 @onready var tutorial_pass_part = false
 @onready var barro = true

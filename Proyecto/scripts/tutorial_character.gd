@@ -6,7 +6,7 @@ extends CharacterBody2D
 @onready var dialogue_controller_second = false
 
 func _ready():
-	#Here it is the order of the characters
+	$"../fadeRectTut".modulate = Color(0, 0, 0, 0)
 	$"../tutorial_manual".modulate = Color(1, 1, 1, 0)
 	characterAnimation()
 	$Button.visibility_changed
@@ -17,7 +17,12 @@ func _process(delta):
 			if Global.cambiar_animacion:
 					movement.play("salir")
 					Global.barro = false
-					await get_tree().create_timer(6).timeout
+					await get_tree().create_timer(3).timeout
+					$"../fade".play("Fade out")
+					await get_tree().create_timer(1).timeout
+					$"../fadeRectTut".modulate = Color(1, 1, 1, 1)
+					await get_tree().create_timer(2).timeout
+					$"../fadeRectTut".modulate = Color(0, 0, 0, 0)
 					Global.barro = true
 					characterAnimation()
 					Global.cambiar_animacion = false
