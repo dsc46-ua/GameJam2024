@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/ending1.gd" id="1_bwacg"]
 [ext_resource type="Texture2D" uid="uid://certid8pw5qlp" path="res://assets/objects/flecha.png" id="2_f5c37"]
-[ext_resource type="Texture2D" path="res://assets/backgrounds/good_ending.png" id="2_xxoi2"]
+[ext_resource type="Texture2D" uid="uid://2luc07dlp4a7" path="res://assets/backgrounds/good_ending.png" id="2_xxoi2"]
 
 [sub_resource type="Animation" id="Animation_yy4rb"]
 resource_name = "Fade in"
