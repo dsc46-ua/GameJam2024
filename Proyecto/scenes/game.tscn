@@ -66,7 +66,7 @@ _data = {
 [node name="game" type="Node2D"]
 script = ExtResource("1_5g3eh")
 
-[node name="bruja" parent="." instance=ExtResource("2_fjr0y")]
+[node name="personaje" parent="." instance=ExtResource("2_fjr0y")]
 z_index = -2
 
 [node name="background" type="Sprite2D" parent="."]
@@ -92,9 +92,6 @@ texture = ExtResource("4_ke3sp")
 z_index = -1
 position = Vector2(160, 90)
 texture = ExtResource("6_74icp")
-
-[node name="Personaje" parent="." instance=ExtResource("2_fjr0y")]
-visible = false
 
 [node name="Vase" parent="." instance=ExtResource("8_cqnt2")]
 position = Vector2(186, 125)

@@ -99,3 +99,35 @@ do Global.puntuacion = [50, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 do Global.bool_conversacion = true
 
 => END
+
+~ tutorial_p0
+
+Unknown Individual: “Hail, newcomer. Since it is thy first day at this labor, I shall instruct thee in
+	 the rudiments.”
+*You nod firmly*
+
+do Global.tutorial_pass_part = true
+
+=> END
+
+~ tutorial_p1
+
+Unknown Individual: “Behold, this is the manual. Within its pages, thou shalt find knowledge of 
+	the diverse kinds of potions.”
+do Global.tutorial_pass_part = true
+
+=> END
+
+~ tutorial_p2
+
+Unknown Individual: “Once thou hast chosen the potion thou dost wish to craft, proceed to the 
+	storage chamber to select the necessary ingredients.”
+
+Unknown Individual: “Thou mayest access the storage chamber by clicking the arrow.”
+
+Unknown Individual: “Finally, after selecting the three requisite ingredients and conversing with
+	the customer, click upon the alchemy machine to concoct the potion.”
+
+Unknown Individual: “Strive not to slay anyone with thy mixtures.”
+do Global.cambiar_animacion = true
+=> END

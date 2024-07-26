@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dbsw33e8qsbqi"]
+[gd_scene load_steps=24 format=3 uid="uid://dbsw33e8qsbqi"]
 
 [ext_resource type="Script" path="res://scripts/Personaje.gd" id="1_6krua"]
 [ext_resource type="Texture2D" uid="uid://d2rqb6ujv6x4r" path="res://assets/chars/char4-neutral.png" id="2_0yalc"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://bmyi083jfrx6m" path="res://assets/chars/char5-angry.png" id="11_ndvkx"]
 [ext_resource type="Texture2D" uid="uid://bw7wt05nyjh1l" path="res://assets/chars/char5-happy.png" id="12_cyiq0"]
 [ext_resource type="Texture2D" uid="uid://bhipve5igxgml" path="res://assets/chars/char1-angry.png" id="14_erb7h"]
+[ext_resource type="Texture2D" uid="uid://cr5ydqwomcukr" path="res://assets/objects/cruz.png" id="14_gvkgh"]
 [ext_resource type="Texture2D" uid="uid://u0iyv1qba3mj" path="res://assets/chars/char1-happy.png" id="15_x2jps"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_b30cg"]
@@ -113,6 +114,14 @@ animations = [{
 }],
 "loop": true,
 "name": &"pickle_neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_gvkgh")
+}],
+"loop": true,
+"name": &"tutorial_guy",
 "speed": 5.0
 }, {
 "frames": [{
@@ -243,7 +252,7 @@ script = ExtResource("1_6krua")
 position = Vector2(-21, 59)
 scale = Vector2(0.772589, 0.714457)
 sprite_frames = SubResource("SpriteFrames_b30cg")
-animation = &"buffed_guy_angry"
+animation = &"pickle_neutral"
 
 [node name="movement_player" type="AnimationPlayer" parent="."]
 libraries = {
