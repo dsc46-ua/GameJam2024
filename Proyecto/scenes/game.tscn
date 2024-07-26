@@ -96,15 +96,6 @@ z_index = -1
 position = Vector2(160, 90)
 texture = ExtResource("6_74icp")
 
-<<<<<<< HEAD
-[node name="Vase" parent="." instance=ExtResource("8_cqnt2")]
-position = Vector2(186, 125)
-scale = Vector2(0.750027, 0.630662)
-=======
-[node name="Personaje" parent="." instance=ExtResource("2_fjr0y")]
-visible = false
->>>>>>> main
-
 [node name="ColorRect" type="ColorRect" parent="."]
 z_index = 4
 offset_left = -16.0
