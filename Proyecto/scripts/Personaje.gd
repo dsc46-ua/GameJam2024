@@ -66,7 +66,8 @@ func characterAnimation():
 
 func _on_movement_player_animation_changed(old_name, new_name):
 	if movement.current_animation == "quieto":
-		Global.animacion = "goblin_stand"
+		if Global.character == "goblin":
+			Global.animacion = "goblin_stand"
 		Global.bool_quieto = true
 	if movement.current_animation == "salir":
 		Global.bool_quieto = false
