@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://bppuqpj8qkw0o"]
+[gd_scene load_steps=4 format=3 uid="uid://bppuqpj8qkw0o"]
 
 [ext_resource type="Script" path="res://scripts/Menu.gd" id="1_um0hv"]
+[ext_resource type="Texture2D" uid="uid://crhbbhtfqh0q5" path="res://assets/backgrounds/main_menu.png" id="2_lwsox"]
+[ext_resource type="Texture2D" uid="uid://birvqmvow6rfi" path="res://assets/backgrounds/logo.png" id="3_h3fgp"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -11,10 +13,10 @@ script = ExtResource("1_um0hv")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
-offset_left = 128.0
-offset_top = 35.0
-offset_right = 198.0
-offset_bottom = 136.0
+offset_left = 228.0
+offset_top = 56.0
+offset_right = 298.0
+offset_bottom = 157.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
@@ -30,6 +32,16 @@ text = "Options"
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Quit"
+
+[node name="MainMenu" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(160, 90)
+texture = ExtResource("2_lwsox")
+
+[node name="Logo" type="Sprite2D" parent="."]
+position = Vector2(260, 32)
+scale = Vector2(0.560815, 0.562159)
+texture = ExtResource("3_h3fgp")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]

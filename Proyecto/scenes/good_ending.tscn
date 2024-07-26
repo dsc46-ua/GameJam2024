@@ -81,9 +81,10 @@ offset_top = 129.0
 offset_right = 272.0
 offset_bottom = 171.0
 theme_override_font_sizes/font_size = 8
-text = "aaaaaaaaaaaaaaaaaaaaaaasaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+text = "“For thy commendable service, thou art hereby granted a 
+contract to labor for us until the end of thy days. May thy 
+work continue to bring honor to our sacred order.”
+"
 
 [node name="fondo" type="ColorRect" parent="."]
 z_index = -3

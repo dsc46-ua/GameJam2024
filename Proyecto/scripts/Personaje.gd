@@ -6,7 +6,7 @@ extends CharacterBody2D
 #Selection of the character and their entry
 
 func _ready():
-	#Here it is the order of the characters
+	#Here it is the order of the characters\
 	change_char()
 	$Button.visibility_changed
 
