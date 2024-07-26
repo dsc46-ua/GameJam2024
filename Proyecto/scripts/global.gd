@@ -18,7 +18,7 @@ extends Node2D
 @onready var score = 0
 
 #Controls on which scene we are
-@onready var currentScene = 0
+@onready var currentScene = 1
 
 #Controls that there is not any repetition of the entry
 @onready var showEntryAnimation = true

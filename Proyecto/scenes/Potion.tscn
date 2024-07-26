@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c5v0gey8vd88n"]
+[gd_scene load_steps=11 format=3 uid="uid://c5v0gey8vd88n"]
 
 [ext_resource type="Texture2D" uid="uid://bh80xov3l2ul7" path="res://assets/objects/pocima.png" id="1_6rjq1"]
 [ext_resource type="Texture2D" uid="uid://b8cn8r4kkbr7c" path="res://assets/objects/relleno_pocima1.png" id="3_57mrf"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cg4xgko7y0oys" path="res://assets/objects/relleno_pocima5.png" id="6_iapdc"]
 [ext_resource type="Texture2D" uid="uid://d0o41igh4n00k" path="res://assets/objects/relleno_pocima6.png" id="7_kcdbg"]
 [ext_resource type="Script" path="res://scripts/Potion.gd" id="8_jtuqw"]
+[ext_resource type="AudioStream" uid="uid://wincaxn4vbw2" path="res://assets/sounds/drinking.mp3" id="10_j3wv6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w5ybk"]
 animations = [{
@@ -57,6 +58,15 @@ script = ExtResource("8_jtuqw")
 [node name="Filling" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_w5ybk")
 autoplay = "default"
+
+[node name="drink" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_j3wv6")
+
+[node name="happy" type="AudioStreamPlayer" parent="."]
+
+[node name="neutral" type="AudioStreamPlayer" parent="."]
+
+[node name="angry" type="AudioStreamPlayer" parent="."]
 
 [connection signal="animation_changed" from="Filling" to="." method="_on_filling_animation_changed"]
 [connection signal="animation_finished" from="Filling" to="." method="_on_filling_animation_finished"]

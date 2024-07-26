@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b4k58pxg5hxpg"]
+[gd_scene load_steps=14 format=3 uid="uid://b4k58pxg5hxpg"]
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_5g3eh"]
 [ext_resource type="PackedScene" uid="uid://dbsw33e8qsbqi" path="res://scenes/Personaje.tscn" id="2_fjr0y"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c5v0gey8vd88n" path="res://scenes/Potion.tscn" id="8_cqnt2"]
 [ext_resource type="Texture2D" uid="uid://fe8qyxndoo4w" path="res://icon.svg" id="8_p1dxa"]
 [ext_resource type="Texture2D" uid="uid://c6x7h8hmsfabd" path="res://assets/objects/Options.png" id="9_2drw3"]
+[ext_resource type="AudioStream" uid="uid://dabu0b4kbt1oq" path="res://assets/sounds/pouring.wav" id="9_gev0x"]
 
 [sub_resource type="Animation" id="Animation_yy4rb"]
 resource_name = "Fade in"
@@ -136,6 +137,10 @@ scale = Vector2(0.542105, 0.543329)
 focus_mode = 0
 icon = ExtResource("9_2drw3")
 flat = true
+
+[node name="pouring" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_gev0x")
+volume_db = -20.0
 
 [connection signal="mouse_entered" from="go_storage" to="." method="_on_go_storage_mouse_entered"]
 [connection signal="mouse_exited" from="go_storage" to="." method="_on_go_storage_mouse_exited"]
