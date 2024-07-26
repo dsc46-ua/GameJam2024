@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://dbsw33e8qsbqi"]
+[gd_scene load_steps=25 format=3 uid="uid://dbsw33e8qsbqi"]
 
 [ext_resource type="Script" path="res://scripts/Personaje.gd" id="1_6krua"]
 [ext_resource type="Texture2D" uid="uid://d2rqb6ujv6x4r" path="res://assets/chars/char4-neutral.png" id="2_0yalc"]
@@ -262,7 +262,6 @@ position = Vector2(-21, 59)
 scale = Vector2(0.772589, 0.714457)
 sprite_frames = SubResource("SpriteFrames_b30cg")
 animation = &"witch_neutral"
-
 
 [node name="movement_player" type="AnimationPlayer" parent="."]
 libraries = {

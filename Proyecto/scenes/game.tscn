@@ -5,11 +5,11 @@
 [ext_resource type="PackedScene" uid="uid://dlr0f007e430m" path="res://scenes/manual.tscn" id="2_o3r4j"]
 [ext_resource type="Texture2D" uid="uid://certid8pw5qlp" path="res://assets/objects/flecha.png" id="4_ke3sp"]
 [ext_resource type="Texture2D" uid="uid://m6ul8275advo" path="res://assets/backgrounds/barra.png" id="6_74icp"]
-[ext_resource type="Texture2D" path="res://assets/objects/máquina_alquímica2.png" id="7_cy42b"]
+[ext_resource type="Texture2D" uid="uid://d21vgvljnquqx" path="res://assets/objects/máquina_alquímica2.png" id="7_cy42b"]
 [ext_resource type="PackedScene" uid="uid://c5v0gey8vd88n" path="res://scenes/Potion.tscn" id="8_cqnt2"]
 [ext_resource type="Texture2D" uid="uid://c6x7h8hmsfabd" path="res://assets/objects/Options.png" id="9_2drw3"]
-[ext_resource type="AudioStream" uid="uid://q4wqun4scwgv" path="res://assets/sounds/pouring.wav" id="9_gev0x"]
-[ext_resource type="Texture2D" path="res://assets/backgrounds/fondo_bar1.png" id="10_1qaso"]
+[ext_resource type="AudioStream" uid="uid://dabu0b4kbt1oq" path="res://assets/sounds/pouring.wav" id="9_gev0x"]
+[ext_resource type="Texture2D" uid="uid://bebdw07v6r51b" path="res://assets/backgrounds/fondo_bar1.png" id="10_1qaso"]
 
 [sub_resource type="Animation" id="Animation_yy4rb"]
 resource_name = "Fade in"
