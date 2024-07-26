@@ -16,7 +16,10 @@ func change_char():
 			Global.animacion = "witch_neutral"
 			Global.character = "witch"
 		1:
-			Global.animacion = "goblin_neutral"
+			if Global.bool_quieto:
+				Global.animacion = "goblin_stand"
+			else:
+				Global.animacion = "goblin_neutral"
 			Global.character = "goblin"
 		2:
 			Global.animacion = "one_eye_neutral"
@@ -63,6 +66,8 @@ func characterAnimation():
 
 func _on_movement_player_animation_changed(old_name, new_name):
 	if movement.current_animation == "quieto":
+		if Global.character == "goblin":
+			Global.animacion = "goblin_stand"
 		Global.bool_quieto = true
 	if movement.current_animation == "salir":
 		Global.bool_quieto = false
@@ -72,7 +77,7 @@ func _on_button_button_up():
 		match character.animation:
 			"witch_neutral":
 				DialogueManager.show_example_dialogue_balloon(load("res://dialogue/main.dialogue"), "witch")
-			"goblin_neutral":
+			"goblin_stand":
 				DialogueManager.show_example_dialogue_balloon(load("res://dialogue/main.dialogue"), "goblin")
 			"one_eye_neutral":
 				DialogueManager.show_example_dialogue_balloon(load("res://dialogue/main.dialogue"), "one_eye")

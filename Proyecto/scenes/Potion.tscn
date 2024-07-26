@@ -1,39 +1,71 @@
-[gd_scene load_steps=10 format=3 uid="uid://c5v0gey8vd88n"]
+[gd_scene load_steps=19 format=3 uid="uid://c5v0gey8vd88n"]
 
-[ext_resource type="Texture2D" uid="uid://bh80xov3l2ul7" path="res://assets/objects/pocima.png" id="1_6rjq1"]
-[ext_resource type="Texture2D" uid="uid://b8cn8r4kkbr7c" path="res://assets/objects/relleno_pocima1.png" id="3_57mrf"]
-[ext_resource type="Texture2D" uid="uid://b0266vmvg3fmg" path="res://assets/objects/relleno_pocima2.png" id="3_umt8f"]
-[ext_resource type="Texture2D" uid="uid://b48jn3skqg51f" path="res://assets/objects/relleno_pocima3.png" id="4_7vfda"]
-[ext_resource type="Texture2D" uid="uid://dh30vcyrben84" path="res://assets/objects/relleno_pocima4.png" id="5_bd78a"]
-[ext_resource type="Texture2D" uid="uid://cg4xgko7y0oys" path="res://assets/objects/relleno_pocima5.png" id="6_iapdc"]
-[ext_resource type="Texture2D" uid="uid://d0o41igh4n00k" path="res://assets/objects/relleno_pocima6.png" id="7_kcdbg"]
+[ext_resource type="Texture2D" uid="uid://b4crng0l1qn1s" path="res://assets/objects/pocima_sprite1.png" id="1_3j4be"]
+[ext_resource type="Texture2D" uid="uid://c35wt325nyf5m" path="res://assets/objects/pocima2.png" id="4_bf04e"]
+[ext_resource type="Texture2D" uid="uid://p78spplhkm7y" path="res://assets/objects/pocima3.png" id="5_osae7"]
+[ext_resource type="Texture2D" uid="uid://qgberk07os01" path="res://assets/objects/pocima4.png" id="6_51k4t"]
+[ext_resource type="Texture2D" uid="uid://fav8lsbvq7j6" path="res://assets/objects/pocima5.png" id="7_fhkqa"]
 [ext_resource type="Script" path="res://scripts/Potion.gd" id="8_jtuqw"]
+[ext_resource type="Texture2D" uid="uid://dnwoqub3pwuwl" path="res://assets/objects/pocima6.png" id="8_yw2xn"]
+[ext_resource type="Texture2D" uid="uid://bbvchnaqms0q8" path="res://assets/objects/pocima7.png" id="9_phrn0"]
+[ext_resource type="AudioStream" uid="uid://wincaxn4vbw2" path="res://assets/sounds/drinking.mp3" id="10_j3wv6"]
+[ext_resource type="Texture2D" uid="uid://kx6w76s0p2gq" path="res://assets/objects/pocima8.png" id="10_jstyc"]
+[ext_resource type="Texture2D" uid="uid://m6ivqlecxpdl" path="res://assets/objects/pocima9.png" id="11_e7pl2"]
+[ext_resource type="Texture2D" uid="uid://c4mwwqlu1ay6n" path="res://assets/objects/pocima10.png" id="12_0nfx4"]
+[ext_resource type="Texture2D" uid="uid://bb55mpg0vv3ib" path="res://assets/objects/pocima11.png" id="13_w1dyy"]
+[ext_resource type="Texture2D" uid="uid://bx11uxpa0knni" path="res://assets/objects/pocima12.png" id="14_tmbsb"]
+[ext_resource type="Texture2D" uid="uid://deix7e7gdkje8" path="res://assets/objects/pocima13.png" id="15_pb460"]
+[ext_resource type="Texture2D" uid="uid://dry2bib5cr7es" path="res://assets/objects/pocima14.png" id="16_dmwvu"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q2rkf"]
+load_path = "res://.godot/imported/relleno_pocima1.png-13166aff1e28dad93ed876a04d393f29.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w5ybk"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_57mrf")
+"texture": SubResource("CompressedTexture2D_q2rkf")
 }],
 "loop": false,
 "name": &"default",
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 2.0,
-"texture": ExtResource("3_umt8f")
+"duration": 1.0,
+"texture": ExtResource("4_bf04e")
 }, {
-"duration": 2.0,
-"texture": ExtResource("4_7vfda")
+"duration": 1.0,
+"texture": ExtResource("5_osae7")
 }, {
-"duration": 2.0,
-"texture": ExtResource("5_bd78a")
+"duration": 1.0,
+"texture": ExtResource("6_51k4t")
 }, {
-"duration": 2.0,
-"texture": ExtResource("6_iapdc")
+"duration": 1.0,
+"texture": ExtResource("7_fhkqa")
 }, {
-"duration": 2.0,
-"texture": ExtResource("7_kcdbg")
+"duration": 1.0,
+"texture": ExtResource("8_yw2xn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_phrn0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jstyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_e7pl2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0nfx4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_w1dyy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_tmbsb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_pb460")
 }],
 "loop": false,
 "name": &"fill",
@@ -41,7 +73,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_kcdbg")
+"texture": ExtResource("16_dmwvu")
 }],
 "loop": false,
 "name": &"full",
@@ -51,16 +83,26 @@ animations = [{
 [node name="Vase" type="Sprite2D"]
 position = Vector2(157, 96)
 scale = Vector2(1.15817, 1.10249)
-texture = ExtResource("1_6rjq1")
+texture = ExtResource("1_3j4be")
 script = ExtResource("8_jtuqw")
 
 [node name="Filling" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_w5ybk")
 autoplay = "default"
+offset = Vector2(0.3, -0.3)
+
+[node name="drink" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_j3wv6")
+
+[node name="happy" type="AudioStreamPlayer" parent="."]
+
+[node name="neutral" type="AudioStreamPlayer" parent="."]
+
+[node name="angry" type="AudioStreamPlayer" parent="."]
 
 [connection signal="animation_changed" from="Filling" to="." method="_on_filling_animation_changed"]
-[connection signal="animation_finished" from="Filling" to="." method="_on_filling_animation_finished"]
 [connection signal="animation_finished" from="Filling" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="animation_finished" from="Filling" to="." method="_on_filling_animation_finished"]
 [connection signal="animation_finished" from="Filling" to="Filling" method="_on_animation_finished"]
 [connection signal="animation_looped" from="Filling" to="." method="_on_filling_animation_looped"]
 [connection signal="sprite_frames_changed" from="Filling" to="." method="_on_filling_sprite_frames_changed"]

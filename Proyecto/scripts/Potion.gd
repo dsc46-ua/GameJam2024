@@ -46,7 +46,9 @@ func _on_filling_animation_finished():
 		$"../AnimationPlayer".play("Fade out")
 		await get_tree().create_timer(1).timeout
 		$"../ColorRect".modulate = Color("Black")
-		await get_tree().create_timer(2).timeout
+		await get_tree().create_timer(1).timeout
+		$drink.play()
+		await get_tree().create_timer(1).timeout
 		filling.play("default")
 		var padre = get_parent()
 		padre.puntuar_pocion()

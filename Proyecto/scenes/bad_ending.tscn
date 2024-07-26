@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://dppgr0ms14jjx"]
 
 [ext_resource type="Script" path="res://scripts/ending2.gd" id="1_e5kgi"]
-[ext_resource type="Texture2D" uid="uid://bg2lpyp8lb7ci" path="res://assets/backgrounds/storage.png" id="2_61olp"]
+[ext_resource type="Texture2D" uid="uid://bafcvr8a1rhpl" path="res://assets/backgrounds/bad_ending.png" id="2_dc4kx"]
 [ext_resource type="Texture2D" uid="uid://certid8pw5qlp" path="res://assets/objects/flecha.png" id="3_adas7"]
 
 [sub_resource type="Animation" id="Animation_yy4rb"]
@@ -63,8 +63,8 @@ script = ExtResource("1_e5kgi")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(162, 68)
-scale = Vector2(0.775841, 0.608189)
-texture = ExtResource("2_61olp")
+scale = Vector2(0.775841, 0.64819)
+texture = ExtResource("2_dc4kx")
 
 [node name="Button" type="Button" parent="."]
 offset_left = 272.0

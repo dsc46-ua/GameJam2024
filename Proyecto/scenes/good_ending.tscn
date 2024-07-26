@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://3wdqf41d5l7w"]
 
-[ext_resource type="Texture2D" uid="uid://bg2lpyp8lb7ci" path="res://assets/backgrounds/storage.png" id="1_8i0sx"]
 [ext_resource type="Script" path="res://scripts/ending1.gd" id="1_bwacg"]
 [ext_resource type="Texture2D" uid="uid://certid8pw5qlp" path="res://assets/objects/flecha.png" id="2_f5c37"]
+[ext_resource type="Texture2D" uid="uid://2luc07dlp4a7" path="res://assets/backgrounds/good_ending.png" id="2_xxoi2"]
 
 [sub_resource type="Animation" id="Animation_yy4rb"]
 resource_name = "Fade in"
@@ -63,8 +63,8 @@ script = ExtResource("1_bwacg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(162, 68)
-scale = Vector2(0.775841, 0.608189)
-texture = ExtResource("1_8i0sx")
+scale = Vector2(0.775841, 0.648188)
+texture = ExtResource("2_xxoi2")
 
 [node name="Button" type="Button" parent="."]
 offset_left = 272.0

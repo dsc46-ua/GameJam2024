@@ -32,6 +32,7 @@ func _on_maquina_button_pressed():
 		if Global.ing1 != 0 and Global.ing2 != 0 and Global.ing3 != 0:
 			Global.bool_fade = false
 			$"Vase/Filling".play("fill")
+			$pouring.play()
 			Global.bool_quieto = false
 #Global.bool_quieto and
 func _on_options_button_pressed():
@@ -60,5 +61,7 @@ func puntuar_pocion() -> void:
 	elif suma >= 50:
 		sufijo = "_happy"
 		Global.cont_bien += 1
-	
 	Global.animacion = Global.character + sufijo
+	if Global.character == "goblin":
+		await get_tree().create_timer(3).timeout
+		Global.animacion = "goblin_neutral"

@@ -6,14 +6,15 @@
 [ext_resource type="Texture2D" uid="uid://cnc7w51i0v5qt" path="res://assets/chars/char4-happy.png" id="3_1mfm0"]
 [ext_resource type="Texture2D" uid="uid://bufmix4tb0cyr" path="res://assets/chars/char2-neutral.png" id="3_shgpa"]
 [ext_resource type="Texture2D" uid="uid://ba1jbc5tqy56a" path="res://assets/chars/char1-neutral.png" id="4_vcbak"]
-[ext_resource type="Texture2D" uid="uid://dnugy5i6his70" path="res://assets/chars/char3-neutral.png" id="4_vetur"]
-[ext_resource type="Texture2D" uid="uid://cbmtfdat2gkb4" path="res://assets/chars/char5-neutral.png" id="5_3moy5"]
+[ext_resource type="Texture2D" uid="uid://cww2ry1uooilv" path="res://assets/chars/char3-neutral.png" id="4_vetur"]
+[ext_resource type="Texture2D" uid="uid://7qytqwayelda" path="res://assets/chars/char5-neutral.png" id="5_3moy5"]
 [ext_resource type="Texture2D" uid="uid://bk4sg6c5uww1a" path="res://assets/chars/char2-angry.png" id="5_vjggc"]
 [ext_resource type="Texture2D" uid="uid://dpu7iny14oeks" path="res://assets/chars/char2-happy.png" id="6_her7k"]
-[ext_resource type="Texture2D" uid="uid://cww2ry1uooilv" path="res://assets/chars/char3-angry.png" id="8_6ypbu"]
-[ext_resource type="Texture2D" uid="uid://dv2cx2pj7uca0" path="res://assets/chars/char3-happy.png" id="9_v66w4"]
-[ext_resource type="Texture2D" uid="uid://bmyi083jfrx6m" path="res://assets/chars/char5-angry.png" id="11_ndvkx"]
-[ext_resource type="Texture2D" uid="uid://bw7wt05nyjh1l" path="res://assets/chars/char5-happy.png" id="12_cyiq0"]
+[ext_resource type="Texture2D" uid="uid://1b4berxxw52a" path="res://assets/chars/char6.png" id="7_poef2"]
+[ext_resource type="Texture2D" uid="uid://dv2cx2pj7uca0" path="res://assets/chars/char3-angry.png" id="8_6ypbu"]
+[ext_resource type="Texture2D" uid="uid://dnugy5i6his70" path="res://assets/chars/char3-happy.png" id="9_v66w4"]
+[ext_resource type="Texture2D" uid="uid://ctocd3o3s6nvm" path="res://assets/chars/char5-angry.png" id="11_ndvkx"]
+[ext_resource type="Texture2D" uid="uid://dacml8ssmn4rq" path="res://assets/chars/char5-happy.png" id="12_cyiq0"]
 [ext_resource type="Texture2D" uid="uid://bhipve5igxgml" path="res://assets/chars/char1-angry.png" id="14_erb7h"]
 [ext_resource type="Texture2D" uid="uid://cr5ydqwomcukr" path="res://assets/objects/cruz.png" id="14_gvkgh"]
 [ext_resource type="Texture2D" uid="uid://u0iyv1qba3mj" path="res://assets/chars/char1-happy.png" id="15_x2jps"]
@@ -62,10 +63,18 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_shgpa")
+"texture": ExtResource("7_poef2")
 }],
 "loop": true,
 "name": &"goblin_neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_shgpa")
+}],
+"loop": true,
+"name": &"goblin_stand",
 "speed": 5.0
 }, {
 "frames": [{
@@ -252,7 +261,8 @@ script = ExtResource("1_6krua")
 position = Vector2(-21, 59)
 scale = Vector2(0.772589, 0.714457)
 sprite_frames = SubResource("SpriteFrames_b30cg")
-animation = &"pickle_neutral"
+animation = &"witch_neutral"
+
 
 [node name="movement_player" type="AnimationPlayer" parent="."]
 libraries = {
