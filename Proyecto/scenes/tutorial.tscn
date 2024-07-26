@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfsl5ev2se808"]
+
+[ext_resource type="PackedScene" uid="uid://dlr0f007e430m" path="res://scenes/manual.tscn" id="1_541sv"]
+[ext_resource type="Texture2D" uid="uid://m6ul8275advo" path="res://assets/backgrounds/barra.png" id="2_1loy5"]
+[ext_resource type="PackedScene" uid="uid://dbsw33e8qsbqi" path="res://scenes/Personaje.tscn" id="5_w6bqs"]
+[ext_resource type="Script" path="res://scripts/tutorial_character.gd" id="6_dobxo"]
+
+[node name="Tutorial" type="Node2D"]
+
+[node name="tutorial_manual" parent="." instance=ExtResource("1_541sv")]
+position = Vector2(156, -41)
+script = null
+
+[node name="Barra" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(160, 90)
+texture = ExtResource("2_1loy5")
+
+[node name="personaje" parent="." instance=ExtResource("5_w6bqs")]
+z_index = -2
+script = ExtResource("6_dobxo")
