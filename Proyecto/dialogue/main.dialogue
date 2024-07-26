@@ -27,58 +27,58 @@ Freyja: Are you for real? You are the one making potions here, you should know i
 
 You: Yeah… that’s kinda true.
 
-do Global.puntuacion = [50, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+do Global.puntuacion = [0, 0, 0, 0, 40, 0, 0, 8, 15, 0, 5, 0, 10, 0]
 do Global.bool_conversacion = true
 
 => END
 
 ~ goblin
 
-Hermenegildo:  Oh, thank goodness I found you! need your help right now. The knights are 
+EErmenegildo:  Oh, thank goodness I found you! need your help right now. The knights are 
 	after me, and I really need a potion to escape from them.
 
 You: Why are the knights chasing you in first place?
 
-Hermenegildo: Nervously It’s a long story, but let’s just say there’s a big conflict going on
+Ermenegildo: Nervously It’s a long story, but let’s just say there’s a big conflict going on
 	between the knights and the gnomes. 
 
 You: Alright, we need to think fast. What kind of potion are you thinking of?
 
-Hermenegildo: Thinking hard Maybe something that can make me invisible or give me the
+Ermenegildo: Thinking hard Maybe something that can make me invisible or give me the
 	speed of a cheetah.
 
 You: Got it, I’ll be back in a second.
 
-do Global.puntuacion = [50, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+do Global.puntuacion = [0, 40, 0, 0, 0, 0, 15, 0, 8, 0, 0, 0, 0, 10]
 do Global.bool_conversacion = true
 
 => END
 
 ~ one_eye
 
-Golbalorb: In a deep, resonant voice Mortal, I have come to a realization. My progress 
+Gorgolov: In a deep, resonant voice Mortal, I have come to a realization. My progress 
 	in learning your language is too slow for my liking. 
 
-Golbalorb: I require a potion to enhance my ability to absorb and comprehend your 
+Gorgolov: I require a potion to enhance my ability to absorb and comprehend your 
 	tongue.
 
 You: I understand, Golbalorb. Why do you feel the need to accelerate your 
 	learning, aren’t you immortal or something?
 
-Golbalorb: With a stern expression Time is a luxury I can afford. My dependence on 
+Gorgolov: With a stern expression Time is a luxury I can afford. My dependence on 
 	my translator must end swiftly as his life is ending. 
 
-Golbalorb: I must master your language to assert my authority and independence.
+Gorgolov: I must master your language to assert my authority and independence.
 
 You: Very well. What kind of potion do you think would help you learn faster?
 
-Golbalorb: In an ancient tone A potion that sharpens the mind and enhances memory. Ingredients that promote clarity and quick learning.
+Gorgolov: In an ancient tone A potion that sharpens the mind and enhances memory. Ingredients that promote clarity and quick learning.
 
-Golbalorb: Do you possess such knowledge?
+Gorgolov: Do you possess such knowledge?
 
 You: Uhhh, I’ll have a look.
 
-do Global.puntuacion = [50, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+do Global.puntuacion = [0, 0, 0, 40, 20, 0, 0, 8, 15, 0, 0, 10, 0, 0]
 do Global.bool_conversacion = true
 
 => END
@@ -100,7 +100,7 @@ You: I see. I have the perfect thing for you.
 Pickle: Clapping hands with glee Yes, yes! Soon after I poison all the near villages, everyone will love pickles as much as I do!
 
 
-do Global.puntuacion = [50, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+do Global.puntuacion = [40, 0, 0, 0, 0, 0, 0, 15, 8, 0, 0, 0, 10, 0]
 do Global.bool_conversacion = true
 
 => END
@@ -123,7 +123,7 @@ You: Alright,I think I got the perfect thing for your “prime”.
 Freyja: Excitedly Perfect. Soon, everyone won’t be able to make fun of me because
 	of my alternative and unique  music taste.
 
-do Global.puntuacion = [50, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+do Global.puntuacion = [0, 40, 3, 0, 0, 0, 15, 0, 8, 0, 0, 0, 10, 0]
 do Global.bool_conversacion = true
 
 => END
@@ -156,7 +156,7 @@ Kai’Mina: Leaning in intensely YES! Something that will make me question my ev
 
 Kai’Mina: No more lucky breaks, just pure, raw challenges.
 
-do Global.puntuacion = [50, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+do Global.puntuacion = [0, 20, 40, 20, 0, 1, 0, 0, 0, 0, 10, 0, 0, 0]
 do Global.bool_conversacion = true
 
 => END
