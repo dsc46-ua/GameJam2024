@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://2nl7pr4xb83x"]
+[gd_scene load_steps=3 format=3 uid="uid://2nl7pr4xb83x"]
 
 [ext_resource type="Script" path="res://scripts/Options.gd" id="1_g3k27"]
+[ext_resource type="Texture2D" uid="uid://crhbbhtfqh0q5" path="res://assets/backgrounds/main_menu.png" id="2_6tup6"]
 
 [node name="Settings" type="Control"]
 layout_mode = 3
@@ -11,10 +12,10 @@ script = ExtResource("1_g3k27")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
-offset_left = 107.0
-offset_top = 12.0
-offset_right = 234.0
-offset_bottom = 196.0
+offset_left = 184.0
+offset_top = 16.0
+offset_right = 311.0
+offset_bottom = 200.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
@@ -47,7 +48,12 @@ popup/item_2/id = 2
 layout_mode = 2
 text = "Back"
 
-[connection signal="value_changed" from="MarginContainer/VBoxContainer/Volume" to="." method="_on_volume_value_changed"]
+[node name="OptionsPocho" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(160, 90)
+texture = ExtResource("2_6tup6")
+
 [connection signal="value_changed" from="MarginContainer/VBoxContainer/Volume" to="." method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="MarginContainer/VBoxContainer/Volume" to="." method="_on_volume_value_changed"]
 [connection signal="item_selected" from="MarginContainer/VBoxContainer/Resolution" to="." method="_on_resolution_item_selected"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]
