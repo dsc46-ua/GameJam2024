@@ -12,7 +12,7 @@ extends Node2D
 @onready var barro = true
 @onready var cont_bien = 0
 @onready var cont_mal = 0
-
+@onready var manual_page = 0
 
 
 #Overall score

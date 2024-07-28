@@ -1,74 +1,267 @@
-[gd_scene load_steps=8 format=3 uid="uid://b5teofxfbmeqg"]
+[gd_scene load_steps=16 format=3 uid="uid://b5teofxfbmeqg"]
 
 [ext_resource type="Script" path="res://scripts/displayed_manual.gd" id="1_udpjq"]
 [ext_resource type="Texture2D" uid="uid://cr5ydqwomcukr" path="res://assets/objects/cruz.png" id="2_1fay5"]
 [ext_resource type="Texture2D" uid="uid://certid8pw5qlp" path="res://assets/objects/flecha.png" id="2_xuha4"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7a7rj"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o8jnr"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8y26r"]
+[ext_resource type="Texture2D" uid="uid://peoa5cnges7q" path="res://assets/backgrounds/manual_pagina1.png" id="4_6jicd"]
+[ext_resource type="Texture2D" uid="uid://hllakldrovj1" path="res://assets/backgrounds/manual_pagina2.png" id="5_8rthf"]
+[ext_resource type="Texture2D" uid="uid://b1e5xfst84jnl" path="res://assets/backgrounds/manual_pagina3.png" id="6_6ckit"]
+[ext_resource type="Texture2D" uid="uid://bebdw07v6r51b" path="res://assets/backgrounds/fondo_bar1.png" id="7_2wmxf"]
+[ext_resource type="Texture2D" uid="uid://m6ul8275advo" path="res://assets/backgrounds/barra.png" id="8_5mx4e"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w3ydf"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_7a7rj")
+"texture": ExtResource("4_6jicd")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_o8jnr")
+"texture": ExtResource("5_8rthf")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_8y26r")
+"texture": ExtResource("6_6ckit")
 }],
 "loop": true,
 "name": &"default",
 "speed": 5.0
 }]
 
+[sub_resource type="LabelSettings" id="LabelSettings_kpx5m"]
+font_size = 10
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_f4h2h"]
+font_size = 10
+font_color = Color(0, 0, 0, 1)
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wb8p0"]
+font_size = 10
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_xhvcj"]
+font_size = 10
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_lkrmu"]
+font_size = 10
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_17juc"]
+font_size = 10
+font_color = Color(0, 0, 0, 1)
+
 [node name="displayed_manual" type="Node2D"]
 script = ExtResource("1_udpjq")
 
 [node name="full_manual" type="AnimatedSprite2D" parent="."]
-position = Vector2(169, 85)
+position = Vector2(160, 90)
 sprite_frames = SubResource("SpriteFrames_w3ydf")
+frame = 2
+frame_progress = 0.746611
 
 [node name="close" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 239.0
-offset_top = 33.0
-offset_right = 257.0
-offset_bottom = 51.0
+offset_left = 206.0
+offset_top = 34.0
+offset_right = 214.0
+offset_bottom = 42.0
 
 [node name="close_sprite" type="Sprite2D" parent="close"]
-position = Vector2(9, 9)
+position = Vector2(4, 4)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_1fay5")
 
 [node name="pass_page" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 243.0
-offset_top = 133.0
-offset_right = 267.0
-offset_bottom = 150.0
+offset_left = 175.0
+offset_top = 151.0
+offset_right = 188.0
+offset_bottom = 161.0
 
 [node name="pass_sprite" type="Sprite2D" parent="pass_page"]
-position = Vector2(11, 8)
+position = Vector2(6, 5)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_xuha4")
 
 [node name="back_page" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 55.0
-offset_top = 118.0
-offset_right = 80.0
-offset_bottom = 135.0
+offset_left = 120.0
+offset_top = 139.0
+offset_right = 147.0
+offset_bottom = 160.0
 rotation = 3.14022
-scale = Vector2(0.999996, 0.995032)
+scale = Vector2(0.5, 0.5)
 pivot_offset = Vector2(20, 15)
 
 [node name="back_page_sprite" type="Sprite2D" parent="back_page"]
-position = Vector2(11.0082, 8.95763)
+position = Vector2(12.0055, 10.989)
 texture = ExtResource("2_xuha4")
+
+[node name="FondoBar1" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(160, 90)
+texture = ExtResource("7_2wmxf")
+
+[node name="Barra" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(160, 90)
+texture = ExtResource("8_5mx4e")
+
+[node name="title_base" type="Label" parent="."]
+visible = false
+offset_left = 152.0
+offset_top = 28.0
+offset_right = 176.0
+offset_bottom = 42.0
+text = "Base
+"
+label_settings = SubResource("LabelSettings_kpx5m")
+
+[node name="mercury" type="Label" parent="."]
+visible = false
+offset_left = 123.0
+offset_top = 38.0
+offset_right = 193.0
+offset_bottom = 53.0
+text = "Sentimentales"
+label_settings = SubResource("LabelSettings_f4h2h")
+
+[node name="tin" type="Label" parent="."]
+visible = false
+offset_left = 168.0
+offset_top = 63.0
+offset_right = 195.0
+offset_bottom = 77.0
+text = "Físico"
+label_settings = SubResource("LabelSettings_wb8p0")
+
+[node name="gold" type="Label" parent="."]
+visible = false
+offset_left = 124.0
+offset_top = 88.0
+offset_right = 157.0
+offset_bottom = 102.0
+text = "Suerte"
+label_settings = SubResource("LabelSettings_xhvcj")
+
+[node name="copper" type="Label" parent="."]
+visible = false
+offset_left = 148.0
+offset_top = 106.0
+offset_right = 201.0
+offset_bottom = 120.0
+text = "Académico"
+label_settings = SubResource("LabelSettings_lkrmu")
+
+[node name="iron" type="Label" parent="."]
+visible = false
+offset_left = 126.0
+offset_top = 138.0
+offset_right = 166.0
+offset_bottom = 161.0
+text = "Amistad"
+label_settings = SubResource("LabelSettings_17juc")
+
+[node name="title_enhancer" type="Label" parent="."]
+visible = false
+offset_left = 141.0
+offset_top = 28.0
+offset_right = 187.0
+offset_bottom = 42.0
+text = "Enhancer
+"
+label_settings = SubResource("LabelSettings_kpx5m")
+
+[node name="lithium" type="Label" parent="."]
+visible = false
+offset_left = 125.0
+offset_top = 47.0
+offset_right = 237.0
+offset_bottom = 70.0
+text = "Invierte función poción"
+label_settings = SubResource("LabelSettings_17juc")
+
+[node name="lime" type="Label" parent="."]
+visible = false
+offset_left = 90.0
+offset_top = 67.0
+offset_right = 251.0
+offset_bottom = 81.0
+text = "Aumenta potencia en uno mismo"
+label_settings = SubResource("LabelSettings_wb8p0")
+
+[node name="brick" type="Label" parent="."]
+visible = false
+offset_left = 114.0
+offset_top = 88.0
+offset_right = 275.0
+offset_bottom = 102.0
+text = "Aumenta potencia relaciones humanas"
+label_settings = SubResource("LabelSettings_wb8p0")
+
+[node name="magnesium" type="Label" parent="."]
+visible = false
+offset_left = 106.0
+offset_top = 111.0
+offset_right = 267.0
+offset_bottom = 125.0
+text = "Potencia beneficios"
+label_settings = SubResource("LabelSettings_wb8p0")
+
+[node name="oropimente" type="Label" parent="."]
+visible = false
+offset_left = 120.0
+offset_top = 136.0
+offset_right = 281.0
+offset_bottom = 150.0
+text = "Potencia negativos"
+label_settings = SubResource("LabelSettings_wb8p0")
+
+[node name="title_flavour" type="Label" parent="."]
+visible = false
+offset_left = 141.0
+offset_top = 28.0
+offset_right = 187.0
+offset_bottom = 42.0
+text = "Flavours"
+label_settings = SubResource("LabelSettings_kpx5m")
+
+[node name="honey" type="Label" parent="."]
+visible = false
+offset_left = 106.0
+offset_top = 65.0
+offset_right = 267.0
+offset_bottom = 79.0
+text = "Potencia negativos"
+label_settings = SubResource("LabelSettings_wb8p0")
+
+[node name="hops" type="Label" parent="."]
+visible = false
+offset_left = 120.0
+offset_top = 40.0
+offset_right = 281.0
+offset_bottom = 54.0
+text = "Potencia negativos"
+label_settings = SubResource("LabelSettings_wb8p0")
+
+[node name="ginger" type="Label" parent="."]
+visible = false
+offset_left = 126.0
+offset_top = 104.0
+offset_right = 287.0
+offset_bottom = 118.0
+text = "Potencia negativos"
+label_settings = SubResource("LabelSettings_wb8p0")
+
+[node name="cinnamon" type="Label" parent="."]
+visible = false
+offset_left = 107.0
+offset_top = 133.0
+offset_right = 268.0
+offset_bottom = 147.0
+text = "Sabor Hogareño"
+label_settings = SubResource("LabelSettings_wb8p0")
 
 [connection signal="mouse_entered" from="close" to="." method="_on_close_mouse_entered"]
 [connection signal="mouse_exited" from="close" to="." method="_on_close_mouse_exited"]
