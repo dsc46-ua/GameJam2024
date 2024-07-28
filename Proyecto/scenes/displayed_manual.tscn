@@ -3,9 +3,9 @@
 [ext_resource type="Script" path="res://scripts/displayed_manual.gd" id="1_udpjq"]
 [ext_resource type="Texture2D" uid="uid://cr5ydqwomcukr" path="res://assets/objects/cruz.png" id="2_1fay5"]
 [ext_resource type="Texture2D" uid="uid://certid8pw5qlp" path="res://assets/objects/flecha.png" id="2_xuha4"]
-[ext_resource type="Texture2D" uid="uid://peoa5cnges7q" path="res://assets/backgrounds/manual_pagina1.png" id="4_6jicd"]
-[ext_resource type="Texture2D" uid="uid://hllakldrovj1" path="res://assets/backgrounds/manual_pagina2.png" id="5_8rthf"]
-[ext_resource type="Texture2D" uid="uid://b1e5xfst84jnl" path="res://assets/backgrounds/manual_pagina3.png" id="6_6ckit"]
+[ext_resource type="Texture2D" uid="uid://e2kse5o1n7b3" path="res://assets/backgrounds/manual_pagina1.png" id="4_6jicd"]
+[ext_resource type="Texture2D" uid="uid://dojp6hi1cr3vn" path="res://assets/backgrounds/manual_pagina2.png" id="5_8rthf"]
+[ext_resource type="Texture2D" uid="uid://bojsxdlwhjx0u" path="res://assets/backgrounds/manual_pagina3.png" id="6_6ckit"]
 [ext_resource type="Texture2D" uid="uid://bebdw07v6r51b" path="res://assets/backgrounds/fondo_bar1.png" id="7_2wmxf"]
 [ext_resource type="Texture2D" uid="uid://m6ul8275advo" path="res://assets/backgrounds/barra.png" id="8_5mx4e"]
 
@@ -57,8 +57,6 @@ script = ExtResource("1_udpjq")
 [node name="full_manual" type="AnimatedSprite2D" parent="."]
 position = Vector2(160, 90)
 sprite_frames = SubResource("SpriteFrames_w3ydf")
-frame = 2
-frame_progress = 0.746611
 
 [node name="close" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -120,10 +118,10 @@ label_settings = SubResource("LabelSettings_kpx5m")
 
 [node name="mercury" type="Label" parent="."]
 visible = false
-offset_left = 123.0
-offset_top = 38.0
-offset_right = 193.0
-offset_bottom = 53.0
+offset_left = 128.0
+offset_top = 46.0
+offset_right = 198.0
+offset_bottom = 61.0
 text = "Sentimentales"
 label_settings = SubResource("LabelSettings_f4h2h")
 

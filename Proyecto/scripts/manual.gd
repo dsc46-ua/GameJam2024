@@ -15,13 +15,16 @@ func _process(delta):
 	pass
 
 func highlight():
-	base_manual.set_modulate(Color(0, 1, 1, 1))
+	if(Global.bool_quieto):
+		base_manual.set_modulate(Color(0, 1, 1, 1))
 
 func unhighlight():
-	base_manual.set_modulate(Color(1, 1, 1, 1))
+	if(Global.bool_quieto):
+		base_manual.set_modulate(Color(1, 1, 1, 1))
 
 func _on_go_back_game_pressed():
-	get_tree().change_scene_to_file("res://scenes/displayed_manual.tscn")
+	if(Global.bool_quieto):
+		get_tree().change_scene_to_file("res://scenes/displayed_manual.tscn")
 
 func _on_go_back_game_mouse_entered():
 	highlight()

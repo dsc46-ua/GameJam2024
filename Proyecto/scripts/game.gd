@@ -1,12 +1,15 @@
 extends Node2D
 
 @onready var storage: Sprite2D = $go_storage/go_storage_sprite
+@onready var machine: Sprite2D = $Maquina
 
 func highlight(image):
-	image.set_modulate(Color(0, 1, 1, 1))
+	if(Global.bool_quieto):
+		image.set_modulate(Color(0, 1, 1, 1))
 
 func unhighlight(image):
-	image.set_modulate(Color(1, 1, 1, 1))
+	if(Global.bool_quieto):
+		image.set_modulate(Color(1, 1, 1, 1))
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -28,6 +31,7 @@ func _on_go_storage_pressed():
 		get_tree().change_scene_to_file("res://scenes/storage.tscn")
 
 func _on_maquina_button_pressed():
+	unhighlight(machine)
 	if  $"Vase/Filling".animation == "default" and Global.bool_conversacion:
 		if Global.ing1 != 0 and Global.ing2 != 0 and Global.ing3 != 0:
 			Global.bool_fade = false
@@ -88,3 +92,11 @@ func puntuar_pocion() -> void:
 	if Global.character == "goblin":
 		await get_tree().create_timer(3).timeout
 		Global.animacion = "goblin_neutral"
+
+func _on_maquina_button_mouse_entered():
+	if(Global.bool_quieto):
+		highlight(machine)
+
+func _on_maquina_button_mouse_exited():
+	if(Global.bool_quieto):
+		unhighlight(machine)

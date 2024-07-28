@@ -98,6 +98,7 @@ position = Vector2(160, 90)
 texture = ExtResource("6_74icp")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 z_index = 4
 offset_left = -16.0
 offset_top = -16.0
@@ -118,11 +119,11 @@ scale = Vector2(0.793476, 0.744547)
 texture = ExtResource("7_cy42b")
 
 [node name="maquina_button" type="Button" parent="Maquina"]
-offset_left = -63.484
-offset_top = -65.0977
-offset_right = -55.484
-offset_bottom = -57.0977
-scale = Vector2(15.9177, 16.3286)
+offset_left = -93.2605
+offset_top = -18.8034
+offset_right = -85.2605
+offset_bottom = -10.8034
+scale = Vector2(20.4594, 7.45092)
 focus_mode = 0
 flat = true
 
@@ -156,6 +157,8 @@ scale = Vector2(0.882813, 0.875)
 [connection signal="mouse_exited" from="go_storage" to="." method="_on_go_storage_mouse_exited"]
 [connection signal="pressed" from="go_storage" to="." method="_on_go_storage_pressed"]
 [connection signal="pressed" from="go_storage" to="manual" method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Maquina/maquina_button" to="." method="_on_maquina_button_mouse_entered"]
+[connection signal="mouse_exited" from="Maquina/maquina_button" to="." method="_on_maquina_button_mouse_exited"]
 [connection signal="pressed" from="Maquina/maquina_button" to="." method="_on_maquina_button_pressed"]
 [connection signal="mouse_entered" from="Options_button" to="." method="_on_options_button_mouse_entered"]
 [connection signal="mouse_exited" from="Options_button" to="." method="_on_options_button_mouse_exited"]

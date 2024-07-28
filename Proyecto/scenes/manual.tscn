@@ -13,10 +13,11 @@ texture = ExtResource("2_k8r8w")
 
 [node name="go_back_game" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
-offset_left = 23.0
-offset_top = 95.0
-offset_right = 36.0
-offset_bottom = 106.0
+offset_left = 19.0
+offset_top = 94.0
+offset_right = 32.0
+offset_bottom = 105.0
+scale = Vector2(1.5395, 1.33715)
 
 [node name="manualPage1" type="Sprite2D" parent="."]
 

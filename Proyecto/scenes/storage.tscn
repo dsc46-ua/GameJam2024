@@ -316,10 +316,11 @@ sprite_frames = SubResource("SpriteFrames_ayjd1")
 
 [node name="mercurio_button" type="Button" parent="mercurio"]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 29.0
-offset_top = 143.0
-offset_right = 50.0
-offset_bottom = 163.0
+offset_left = 28.0
+offset_top = 147.0
+offset_right = 49.0
+offset_bottom = 167.0
+scale = Vector2(1.09552, 0.682959)
 flat = true
 metadata/_edit_use_anchors_ = true
 
@@ -353,10 +354,11 @@ sprite_frames = SubResource("SpriteFrames_6deaw")
 
 [node name="estanyo_button" type="Button" parent="estanyo"]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = -131.0
-offset_top = 115.0
-offset_right = -110.0
-offset_bottom = 135.0
+offset_left = -132.0
+offset_top = 118.0
+offset_right = -111.0
+offset_bottom = 138.0
+scale = Vector2(1.15245, 0.731653)
 flat = true
 metadata/_edit_use_anchors_ = true
 
@@ -390,10 +392,11 @@ sprite_frames = SubResource("SpriteFrames_fut3t")
 
 [node name="oro_button" type="Button" parent="oro"]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 139.0
-offset_top = 142.0
-offset_right = 160.0
-offset_bottom = 162.0
+offset_left = 138.0
+offset_top = 146.0
+offset_right = 159.0
+offset_bottom = 166.0
+scale = Vector2(1.15077, 0.660203)
 flat = true
 metadata/_edit_use_anchors_ = true
 
@@ -427,10 +430,11 @@ sprite_frames = SubResource("SpriteFrames_ebhf1")
 
 [node name="cobre_button" type="Button" parent="cobre"]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 36.0
-offset_top = 29.0
-offset_right = 57.0
-offset_bottom = 49.0
+offset_left = 34.0
+offset_top = 33.0
+offset_right = 55.0
+offset_bottom = 53.0
+scale = Vector2(1.15268, 0.624514)
 flat = true
 metadata/_edit_use_anchors_ = true
 
@@ -465,10 +469,11 @@ sprite_frames = SubResource("SpriteFrames_ipdut")
 
 [node name="hierro_button" type="Button" parent="hierro"]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 37.0
-offset_top = 27.0
-offset_right = 58.0
-offset_bottom = 47.0
+offset_left = 35.0
+offset_top = 31.0
+offset_right = 56.0
+offset_bottom = 51.0
+scale = Vector2(1.14722, 0.685376)
 flat = true
 metadata/_edit_use_anchors_ = true
 
@@ -502,10 +507,11 @@ sprite_frames = SubResource("SpriteFrames_4t1h4")
 
 [node name="litio_button" type="Button" parent="litio"]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 32.0
-offset_top = 38.0
-offset_right = 60.0
-offset_bottom = 58.0
+offset_left = 33.0
+offset_top = 42.0
+offset_right = 61.0
+offset_bottom = 62.0
+scale = Vector2(0.939508, 0.661264)
 flat = true
 
 [node name="name" type="Label" parent="litio"]
@@ -538,11 +544,11 @@ sprite_frames = SubResource("SpriteFrames_i4rkc")
 
 [node name="cal_button" type="Button" parent="cal"]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 35.0
-offset_top = 31.0
-offset_right = 56.0
-offset_bottom = 51.0
-scale = Vector2(1.12207, 0.596121)
+offset_left = 34.0
+offset_top = 34.0
+offset_right = 55.0
+offset_bottom = 54.0
+scale = Vector2(1.24325, 0.310252)
 flat = true
 metadata/_edit_use_anchors_ = true
 
@@ -576,11 +582,11 @@ sprite_frames = SubResource("SpriteFrames_xagde")
 
 [node name="ladrillo_button" type="Button" parent="ladrillo"]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 91.0
+offset_left = 92.0
 offset_top = 23.0
-offset_right = 112.0
+offset_right = 113.0
 offset_bottom = 43.0
-scale = Vector2(0.944846, 1.08)
+scale = Vector2(0.851557, 1.06468)
 flat = true
 metadata/_edit_use_anchors_ = true
 
@@ -615,10 +621,10 @@ sprite_frames = SubResource("SpriteFrames_i2en0")
 [node name="magnesio_button" type="Button" parent="magnesio"]
 self_modulate = Color(1, 1, 1, 0)
 offset_left = 33.0
-offset_top = 34.0
+offset_top = 35.0
 offset_right = 54.0
-offset_bottom = 54.0
-scale = Vector2(1.4878, 0.878564)
+offset_bottom = 55.0
+scale = Vector2(1.43847, 0.755044)
 flat = true
 metadata/_edit_use_anchors_ = true
 
@@ -652,11 +658,11 @@ sprite_frames = SubResource("SpriteFrames_g3xs4")
 
 [node name="oropimente_button" type="Button" parent="oropimente"]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 74.0
+offset_left = 75.0
 offset_top = 58.0
-offset_right = 95.0
+offset_right = 96.0
 offset_bottom = 78.0
-scale = Vector2(0.741745, 1.01849)
+scale = Vector2(0.624704, 1.0108)
 flat = true
 metadata/_edit_use_anchors_ = true
 
@@ -691,10 +697,10 @@ sprite_frames = SubResource("SpriteFrames_vny4r")
 [node name="miel_button" type="Button" parent="miel"]
 self_modulate = Color(1, 1, 1, 0)
 offset_left = 214.0
-offset_top = 33.0
+offset_top = 34.0
 offset_right = 235.0
-offset_bottom = 53.0
-scale = Vector2(1.03873, 1.22358)
+offset_bottom = 54.0
+scale = Vector2(1.06106, 1.15942)
 flat = true
 
 [node name="name" type="Label" parent="miel"]
@@ -728,10 +734,10 @@ sprite_frames = SubResource("SpriteFrames_nd16v")
 [node name="lupulo_button" type="Button" parent="lupulo"]
 self_modulate = Color(1, 1, 1, 0)
 offset_left = 260.0
-offset_top = 32.0
+offset_top = 33.0
 offset_right = 281.0
-offset_bottom = 52.0
-scale = Vector2(1.03931, 1.17503)
+offset_bottom = 53.0
+scale = Vector2(1.04707, 1.16037)
 flat = true
 
 [node name="name" type="Label" parent="lupulo"]
@@ -764,11 +770,11 @@ sprite_frames = SubResource("SpriteFrames_a0ak5")
 
 [node name="jengibre_button" type="Button" parent="jengibre"]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 213.0
-offset_top = 70.0
-offset_right = 234.0
-offset_bottom = 90.0
-scale = Vector2(1.14457, 1.43493)
+offset_left = 214.0
+offset_top = 72.0
+offset_right = 235.0
+offset_bottom = 92.0
+scale = Vector2(1.05583, 1.31584)
 flat = true
 
 [node name="name" type="Label" parent="jengibre"]
@@ -802,10 +808,10 @@ sprite_frames = SubResource("SpriteFrames_vfayc")
 [node name="canela_button" type="Button" parent="canela"]
 self_modulate = Color(1, 1, 1, 0)
 offset_left = 260.0
-offset_top = 74.0
+offset_top = 75.0
 offset_right = 281.0
-offset_bottom = 94.0
-scale = Vector2(1.09076, 1.24052)
+offset_bottom = 95.0
+scale = Vector2(1.04656, 1.14544)
 flat = true
 
 [node name="name" type="Label" parent="canela"]
