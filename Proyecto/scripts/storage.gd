@@ -352,7 +352,7 @@ func _on_lupulo_button_mouse_exited():
 
 func _on_jengibre_button_pressed():
 	select_sprite(jengibre, "flavour")
-	Global.ing3 = 12
+	Global.ing3 = 13
 
 func _on_jengibre_button_mouse_entered():
 	highlight(jengibre)

@@ -73,6 +73,8 @@ func puntuar_pocion() -> void:
 						suma = 25
 	else:
 		suma = Global.puntuacion[Global.ing1 - 1] + Global.puntuacion[Global.ing2 - 1] + Global.puntuacion[Global.ing3 - 1]
+		if Global.ing2 == 6:
+			suma = 0
 	var sufijo: String = ""
 	if suma >= 0 and suma <= 24:
 		sufijo = "_angry"
