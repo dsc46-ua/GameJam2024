@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://b4k58pxg5hxpg"]
+[gd_scene load_steps=16 format=3 uid="uid://b4k58pxg5hxpg"]
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_5g3eh"]
 [ext_resource type="PackedScene" uid="uid://dbsw33e8qsbqi" path="res://scenes/Personaje.tscn" id="2_fjr0y"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://c6x7h8hmsfabd" path="res://assets/objects/Options.png" id="9_2drw3"]
 [ext_resource type="AudioStream" uid="uid://dabu0b4kbt1oq" path="res://assets/sounds/pouring.wav" id="9_gev0x"]
 [ext_resource type="Texture2D" uid="uid://bebdw07v6r51b" path="res://assets/backgrounds/fondo_bar1.png" id="10_1qaso"]
+[ext_resource type="PackedScene" uid="uid://hcoiyddw6ip2" path="res://scenes/contador.tscn" id="11_8xuiw"]
 
 [sub_resource type="Animation" id="Animation_yy4rb"]
 resource_name = "Fade in"
@@ -146,6 +147,10 @@ texture = ExtResource("10_1qaso")
 position = Vector2(191, 128)
 scale = Vector2(0.769209, 0.699941)
 offset = Vector2(0.3, -0.3)
+
+[node name="contador" parent="." instance=ExtResource("11_8xuiw")]
+position = Vector2(253.5, 18.5)
+scale = Vector2(0.882813, 0.875)
 
 [connection signal="mouse_entered" from="go_storage" to="." method="_on_go_storage_mouse_entered"]
 [connection signal="mouse_exited" from="go_storage" to="." method="_on_go_storage_mouse_exited"]
