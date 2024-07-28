@@ -7,15 +7,15 @@ Freyja: weird wizard with powerful magic that I need… I mean, want to share.
 
 You: Do you have anything in mind?
 
-Freyja: Dramatically sighs A friendship potion, of course. Even though the idea of 
+Freyja: *Dramatically sighs* A friendship potion, of course. Even though the idea of 
 	being friends with someone gives me chills, it’s necessary for my plan. 
 
-Freyja: That wizard, always so arrogant with his “unique”  power… He has no idea 
+Freyja: That wizard, always so arrogant with his “unique” power… He has no idea 
 	what’s coming.
 
 You: And how is this potion supposed to work?
 
-Freyja: Rolls eyes Do I really have to explain everything? The potion will make
+Freyja: *Rolls eyes* Do I really have to explain everything? The potion will make
 	him trust me, and when he does, I’ll be able to access his magic. 
 
 Freyja: It’s a perfect plan, if only I didn’t have to deal with all this.
@@ -39,13 +39,13 @@ EErmenegildo:  Oh, thank goodness I found you! need your help right now. The kni
 
 You: Why are the knights chasing you in first place?
 
-Ermenegildo: Nervously It’s a long story, but let’s just say there’s a big conflict going on
+Ermenegildo: *Nervously* It’s a long story, but let’s just say there’s a big conflict going on
 	between the knights and the gnomes. 
 
 You: Alright, we need to think fast. What kind of potion are you thinking of?
 
-Ermenegildo: Thinking hard Maybe something that can make me invisible or give me the
-	speed of a cheetah.
+Ermenegildo: *Thinking hard* Maybe something that can make me invisible or give me 
+		the speed of a cheetah.
 
 You: Got it, I’ll be back in a second.
 
@@ -56,13 +56,13 @@ do Global.bool_conversacion = true
 
 ~ one_eye
 
-Gorgolov: In a deep, resonant voice Mortal, I have come to a realization. My progress 
-	in learning your language is too slow for my liking. 
+Gorgolov: *In a deep, resonant voice* Mortal, I have come to a realization. My 
+	progress in learning your language is too slow for my liking. 
 
 Gorgolov: I require a potion to enhance my ability to absorb and comprehend your 
 	tongue.
 
-You: I understand, Golbalorb. Why do you feel the need to accelerate your 
+You: I understand, Gorgolov. Why do you feel the need to accelerate your 
 	learning, aren’t you immortal or something?
 
 Gorgolov: With a stern expression Time is a luxury I can afford. My dependence on 
@@ -85,19 +85,20 @@ do Global.bool_conversacion = true
 
 ~ pickle
 
-Pickle: With wild eyes and a manic grin Hey, hey! I need your help! I need a potion,
+Pickle: *With wild eyes and a maniac grin* Hey!, I need your help! I need a potion, 
 	a special one. You see, everyone needs to love pickles as much as I do!
 
 You: Alright, Pickle. Why do you want everyone to love pickles?
 
-Pickle: Giggling uncontrollably Because pickles are the best! They’re crunchy,
+Pickle: *Giggling uncontrollably* Because pickles are the best! They’re crunchy,
 	tangy, and just perfect! But no one else seems to understand. 
 
 Pickle: They need to see the beauty of pickles!
 
 You: I see. I have the perfect thing for you.
 
-Pickle: Clapping hands with glee Yes, yes! Soon after I poison all the near villages, everyone will love pickles as much as I do!
+Pickle: *Clapping hands with glee* Yes, yes! Soon after I poison all the near 
+	villages, everyone will love pickles as much as I do!
 
 
 do Global.puntuacion = [40, 0, 0, 0, 0, 0, 0, 15, 8, 0, 0, 0, 10, 0]
@@ -107,21 +108,25 @@ do Global.bool_conversacion = true
 
 ~ witch2
 
-Freyja: Entering with a triumphant grin Guess what? I’ve got the spell. Now, 
-	I need a potion to boost my power so I can use it.
+Freyja: *Entering with a triumphant grin* Guess what? I’ve got the spell. Now I 
+	need a potion to boost my power so I can use it.
+
+Freyja: I'm not sure if your potion had anything to do with me getting the spell 
+	but I lose nothing asking for another one.
 
 Freyja: I want to see the look on everyone's faces when they realize what I can do.
 
 You: Yeah… sure. What kind of potion are you thinking of?
 
-Freyja: With a mischievous glint in her eye Something that will amplify my magical abilities. I need to be at my prime to wield this spell properly.
+Freyja: *With a mischievous glint in her eyes* Something that will amplify my 
+	magical abilities. I need to be at my prime to wield this spell properly.
 
 Freyja: It’s going to be spectacular and so different from everyone’s spells.
 
 You: Alright,I think I got the perfect thing for your “prime”.
 
-Freyja: Excitedly Perfect. Soon, everyone won’t be able to make fun of me because
-	of my alternative and unique  music taste.
+Freyja: *Excitedly* Perfect. Soon, everyone won’t be able to make fun of me 
+	because of my alternative and unique music taste.
 
 do Global.puntuacion = [0, 40, 3, 0, 0, 0, 15, 0, 8, 0, 0, 0, 10, 0]
 do Global.bool_conversacion = true
@@ -130,7 +135,7 @@ do Global.bool_conversacion = true
 
 ~ buffed_guy
 
-Kai’Mina: Bursting in with intense energy I CAN’T TAKE IT ANYMORE!!! Every battle,
+Kai’Mina: *Bursting in with intense energy* I CAN’T TAKE IT ANYMORE!!! Every battle,
 	every duel, it’s always the same. 
 
 Kai’Mina: I win by some ridiculous stroke of luck. It’s like I’m the protagonist or
@@ -138,7 +143,7 @@ Kai’Mina: I win by some ridiculous stroke of luck. It’s like I’m the prota
 
 You: Wow, man, you seem really frustrated. What do you want to change?
 
-Kai’Mina: Eyes blazing I need something different, something that will make my 
+Kai’Mina: *Eyes blazing* I need something different, something that will make my 
 	victories feel earned, not just handed to me by fate.
 
 Kai’Mina: I want to feel the thrill of a real challenge, the uncertainty of not knowing if
@@ -146,24 +151,33 @@ Kai’Mina: I want to feel the thrill of a real challenge, the uncertainty of no
 
 You: I see. So you’re looking for a way to make your battles more unpredictable?
 
-Kai’Mina: Nodding vigorously EXACTLY! I need a potion that will… shake things up a
+Kai’Mina: *Nodding vigorously* EXACTLY! I need a potion that will… shake things up a
 	bit. Make things less certain, more… thrilling. 
 
 You: Hmm, I think I get it. You want a potion that will make your outcomes less predictable, right?
 
-Kai’Mina: Leaning in intensely YES! Something that will make me question my every
+Kai’Mina: *Leaning in intensely* YES! Something that will make me question my every
 	move, that will make every battle a true test of my skills.
 
 Kai’Mina: No more lucky breaks, just pure, raw challenges.
 
-do Global.puntuacion = [0, 20, 40, 20, 0, 1, 0, 0, 0, 0, 10, 0, 0, 0]
+do Global.puntuacion = [0, 20, 40, 20, 0, 1, 0, 0, 0, 8, 10, 0, 0, 0]
 do Global.bool_conversacion = true
 
 => END
 
 ~ tutorial_p0
 
-Unknown Individual: “Hail, newcomer. Since it is thy first day at this labor, I shall instruct thee in
+Unknown Individual: “Hail, newcomer, it has come to my attention that you want to be part of our 
+	sect, but we can't accept you that easy into it, as the sect leader i will assign you a test”
+
+Unknown Individual: “your job for the night is to make potions for our sects members in the sake 
+	of helping them with solving their problems”
+
+Unknown Individual: “they will later inform me about their experience with you and at the end 
+	of the night you will know if you got in”
+
+Unknown Individual: “Since it is thy first day at this labor, I shall instruct thee in
 	 the rudiments.”
 *You nod firmly*
 
