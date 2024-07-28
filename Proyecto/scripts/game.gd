@@ -46,12 +46,33 @@ func _on_options_button_mouse_exited():
 	$Options_button.modulate = Color(1, 1, 1, 1)
 
 func puntuar_pocion() -> void:
+	var suma = 0
 	# rango ingredieeentes
 	if  (1 > Global.ing1 or Global.ing1 > 14) or (1 > Global.ing2 or Global.ing2 > 14) or (1 > Global.ing3 or Global.ing3 > 14):
 		print("Error: Los índices deben estar entre 1 y 14.")
 		return
-	
-	var suma = Global.puntuacion[Global.ing1 - 1] + Global.puntuacion[Global.ing2 - 1] + Global.puntuacion[Global.ing3 - 1]
+
+	if Global.currentScene == 5:
+		if Global.ing2 == 6: 
+			match Global.ing1:
+				2:
+					if Global.ing3 == 11:
+						suma = 50
+					else:
+						suma = 25
+				3:
+					suma = 50
+		if Global.ing2 == 10: 
+			match Global.ing1:
+				2:
+					suma=25
+				3:
+					if Global.ing3 == 11:
+						suma = 50
+					else:
+						suma = 25
+	else:
+		suma = Global.puntuacion[Global.ing1 - 1] + Global.puntuacion[Global.ing2 - 1] + Global.puntuacion[Global.ing3 - 1]
 	var sufijo: String = ""
 	if suma >= 0 and suma <= 24:
 		sufijo = "_angry"

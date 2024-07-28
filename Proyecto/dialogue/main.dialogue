@@ -161,7 +161,7 @@ Kai’Mina: *Leaning in intensely* YES! Something that will make me question my 
 
 Kai’Mina: No more lucky breaks, just pure, raw challenges.
 
-do Global.puntuacion = [0, 20, 40, 20, 0, 1, 0, 0, 0, 8, 10, 0, 0, 0]
+do Global.puntuacion = [0, 2, 1, 0, 0, 1, 0, 0, 0, 15, 10, 0, 0, 0]
 do Global.bool_conversacion = true
 
 => END
