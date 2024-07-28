@@ -31,24 +31,24 @@ font_size = 10
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_f4h2h"]
-font_size = 10
+font_size = 5
 font_color = Color(0, 0, 0, 1)
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_wb8p0"]
-font_size = 10
+font_size = 5
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_xhvcj"]
-font_size = 10
+font_size = 5
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_lkrmu"]
-font_size = 10
+font_size = 5
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_17juc"]
-font_size = 10
+font_size = 5
 font_color = Color(0, 0, 0, 1)
 
 [node name="displayed_manual" type="Node2D"]
@@ -107,7 +107,6 @@ position = Vector2(160, 90)
 texture = ExtResource("8_5mx4e")
 
 [node name="title_base" type="Label" parent="."]
-visible = false
 offset_left = 152.0
 offset_top = 28.0
 offset_right = 176.0
@@ -119,46 +118,53 @@ label_settings = SubResource("LabelSettings_kpx5m")
 [node name="mercury" type="Label" parent="."]
 visible = false
 offset_left = 128.0
-offset_top = 46.0
+offset_top = 44.0
 offset_right = 198.0
-offset_bottom = 61.0
-text = "Sentimentales"
+offset_bottom = 63.0
+theme_override_font_sizes/font_size = 10
+text = "-Mercury
+Affects emotions"
 label_settings = SubResource("LabelSettings_f4h2h")
 
 [node name="tin" type="Label" parent="."]
 visible = false
-offset_left = 168.0
+offset_left = 140.0
 offset_top = 63.0
-offset_right = 195.0
-offset_bottom = 77.0
-text = "Físico"
+offset_right = 200.0
+offset_bottom = 82.0
+text = "-Tin
+Enhances physical traits"
 label_settings = SubResource("LabelSettings_wb8p0")
 
 [node name="gold" type="Label" parent="."]
 visible = false
-offset_left = 124.0
-offset_top = 88.0
-offset_right = 157.0
-offset_bottom = 102.0
-text = "Suerte"
+offset_left = 122.0
+offset_top = 85.0
+offset_right = 155.0
+offset_bottom = 104.0
+text = "-Gold
+Brings luck"
 label_settings = SubResource("LabelSettings_xhvcj")
 
 [node name="copper" type="Label" parent="."]
 visible = false
-offset_left = 148.0
-offset_top = 106.0
-offset_right = 201.0
-offset_bottom = 120.0
-text = "Académico"
+offset_left = 147.0
+offset_top = 103.0
+offset_right = 209.0
+offset_bottom = 122.0
+text = "-Copper Oxide
+Boosts academic abilities"
 label_settings = SubResource("LabelSettings_lkrmu")
 
 [node name="iron" type="Label" parent="."]
 visible = false
-offset_left = 126.0
-offset_top = 138.0
-offset_right = 166.0
-offset_bottom = 161.0
-text = "Amistad"
+offset_left = 129.0
+offset_top = 133.0
+offset_right = 181.0
+offset_bottom = 156.0
+text = "-Iron Oxide
+Enhances friendships
+"
 label_settings = SubResource("LabelSettings_17juc")
 
 [node name="title_enhancer" type="Label" parent="."]
@@ -173,47 +179,56 @@ label_settings = SubResource("LabelSettings_kpx5m")
 
 [node name="lithium" type="Label" parent="."]
 visible = false
-offset_left = 125.0
-offset_top = 47.0
-offset_right = 237.0
-offset_bottom = 70.0
-text = "Invierte función poción"
+offset_left = 126.0
+offset_top = 44.0
+offset_right = 238.0
+offset_bottom = 67.0
+text = "-Lithium
+Reverses potion effects"
 label_settings = SubResource("LabelSettings_17juc")
 
 [node name="lime" type="Label" parent="."]
 visible = false
-offset_left = 90.0
-offset_top = 67.0
-offset_right = 251.0
-offset_bottom = 81.0
-text = "Aumenta potencia en uno mismo"
+offset_left = 146.0
+offset_top = 66.0
+offset_right = 307.0
+offset_bottom = 85.0
+text = "-Lime
+Increases self-potency
+"
 label_settings = SubResource("LabelSettings_wb8p0")
 
 [node name="brick" type="Label" parent="."]
 visible = false
 offset_left = 114.0
-offset_top = 88.0
+offset_top = 87.0
 offset_right = 275.0
-offset_bottom = 102.0
-text = "Aumenta potencia relaciones humanas"
+offset_bottom = 106.0
+text = "-Brick Oil
+Enhances human relations
+"
 label_settings = SubResource("LabelSettings_wb8p0")
 
 [node name="magnesium" type="Label" parent="."]
 visible = false
-offset_left = 106.0
-offset_top = 111.0
-offset_right = 267.0
-offset_bottom = 125.0
-text = "Potencia beneficios"
+offset_left = 140.0
+offset_top = 109.0
+offset_right = 301.0
+offset_bottom = 128.0
+text = "-Magnesium
+Boosts beneficial effects
+"
 label_settings = SubResource("LabelSettings_wb8p0")
 
 [node name="oropimente" type="Label" parent="."]
 visible = false
-offset_left = 120.0
-offset_top = 136.0
-offset_right = 281.0
-offset_bottom = 150.0
-text = "Potencia negativos"
+offset_left = 119.0
+offset_top = 132.0
+offset_right = 280.0
+offset_bottom = 151.0
+text = "-Orpiment 
+Enhances negative effects
+"
 label_settings = SubResource("LabelSettings_wb8p0")
 
 [node name="title_flavour" type="Label" parent="."]
@@ -227,38 +242,45 @@ label_settings = SubResource("LabelSettings_kpx5m")
 
 [node name="honey" type="Label" parent="."]
 visible = false
-offset_left = 106.0
-offset_top = 65.0
-offset_right = 267.0
-offset_bottom = 79.0
-text = "Potencia negativos"
+offset_left = 123.0
+offset_top = 44.0
+offset_right = 284.0
+offset_bottom = 63.0
+text = "-Clover Honey
+Increases sweetness
+"
 label_settings = SubResource("LabelSettings_wb8p0")
 
 [node name="hops" type="Label" parent="."]
 visible = false
-offset_left = 120.0
-offset_top = 40.0
-offset_right = 281.0
-offset_bottom = 54.0
-text = "Potencia negativos"
+offset_left = 148.0
+offset_top = 71.0
+offset_right = 309.0
+offset_bottom = 90.0
+text = "-Hops
+Increases bitterness
+"
 label_settings = SubResource("LabelSettings_wb8p0")
 
 [node name="ginger" type="Label" parent="."]
 visible = false
 offset_left = 126.0
-offset_top = 104.0
+offset_top = 101.0
 offset_right = 287.0
-offset_bottom = 118.0
-text = "Potencia negativos"
+offset_bottom = 120.0
+text = "-Ginger
+Adds exotic flavor
+"
 label_settings = SubResource("LabelSettings_wb8p0")
 
 [node name="cinnamon" type="Label" parent="."]
 visible = false
-offset_left = 107.0
-offset_top = 133.0
-offset_right = 268.0
-offset_bottom = 147.0
-text = "Sabor Hogareño"
+offset_left = 149.0
+offset_top = 131.0
+offset_right = 310.0
+offset_bottom = 150.0
+text = "-Cinnamon
+Adds homely flavor"
 label_settings = SubResource("LabelSettings_wb8p0")
 
 [connection signal="mouse_entered" from="close" to="." method="_on_close_mouse_entered"]

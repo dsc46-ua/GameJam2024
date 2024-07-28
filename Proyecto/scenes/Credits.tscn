@@ -11,16 +11,16 @@ offset_bottom = 180.0
 color = Color(0, 0, 0, 1)
 
 [node name="Label" type="Label" parent="."]
-offset_left = 14.0
+offset_left = 11.0
 offset_top = 12.0
-offset_right = 222.0
+offset_right = 219.0
 offset_bottom = 264.0
 theme_override_font_sizes/font_size = 10
 text = "GAME DIRECTOR 
 Daniel Segurado Climent
 
 DEVELOPERS
-Lead Developer - Jastin Alexander
+Lead Developer- Jastin Fernandez Santín
 Daniel Segurado Climent
 
 ARTIST
@@ -28,10 +28,10 @@ Gabriel Alacalá Valero
 "
 
 [node name="Label2" type="Label" parent="."]
-offset_left = 195.0
-offset_top = 43.0
-offset_right = 403.0
-offset_bottom = 125.0
+offset_left = 211.0
+offset_top = 44.0
+offset_right = 419.0
+offset_bottom = 126.0
 theme_override_font_sizes/font_size = 10
 text = "NARRATIVE
 Antonio Morales

@@ -128,7 +128,7 @@ You: Alright,I think I got the perfect thing for your “prime”.
 Freyja: *Excitedly* Perfect. Soon, everyone won’t be able to make fun of me 
 	because of my alternative and unique music taste.
 
-do Global.puntuacion = [0, 40, 3, 0, 0, 0, 15, 0, 8, 0, 0, 0, 10, 0]
+do Global.puntuacion = [0, 20, 0, 40, 0, 0, 15, 0, 8, 0, 0, 0, 10, 0]
 do Global.bool_conversacion = true
 
 => END
