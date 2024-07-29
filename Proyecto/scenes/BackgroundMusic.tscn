@@ -1,9 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://djoy5efhv5h37"]
+[gd_scene load_steps=3 format=3 uid="uid://djoy5efhv5h37"]
 
-[ext_resource type="AudioStream" uid="uid://bp4dlkg1qeijy" path="res://assets/sounds/scott-buckley-moonlight(chosic.com).mp3" id="1_v7xnt"]
+[ext_resource type="AudioStream" uid="uid://jrxkjwdeejs4" path="res://assets/sounds/BSO_darktender_main_menu.wav" id="1_e1sfh"]
+[ext_resource type="Script" path="res://scenes/BackgroundMusic.gd" id="2_b2te2"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
-stream = ExtResource("1_v7xnt")
+stream = ExtResource("1_e1sfh")
 volume_db = -10.0
 autoplay = true
 bus = &"Music"
+script = ExtResource("2_b2te2")

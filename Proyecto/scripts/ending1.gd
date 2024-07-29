@@ -3,6 +3,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Global.change_music2 = true
 	$fade.play("Fade in")
 	await get_tree().create_timer(3).timeout
 	$fadeRect.modulate = Color(0, 0, 0, 0)
