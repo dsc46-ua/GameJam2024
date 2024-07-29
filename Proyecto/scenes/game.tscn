@@ -154,7 +154,7 @@ position = Vector2(253.5, 18.5)
 scale = Vector2(0.882813, 0.875)
 
 [node name="reaction" type="AudioStreamPlayer" parent="."]
-volume_db = -12.0
+volume_db = -15.0
 bus = &"Music"
 
 [connection signal="mouse_entered" from="go_storage" to="." method="_on_go_storage_mouse_entered"]

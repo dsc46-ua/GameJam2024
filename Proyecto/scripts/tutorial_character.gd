@@ -27,6 +27,7 @@ func _process(delta):
 					characterAnimation()
 					Global.cambiar_animacion = false
 					Global.showEntryAnimation = true
+					Global.bool_quieto = false
 					get_tree().change_scene_to_file("res://scenes/game.tscn")
 		
 		if(Global.tutorial_pass_part):	
