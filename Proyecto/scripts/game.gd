@@ -91,19 +91,19 @@ func puntuar_pocion() -> void:
 			sufijo = "_stand"
 		else:
 			sufijo = "_neutral"
-		await get_tree().create_timer(1.1).timeout
+		await get_tree().create_timer(1).timeout
 		$reaction.stream = load("res://assets/sounds/sonido_neutro.wav")
 		$reaction.play()
 	elif suma >= 50:
 		sufijo = "_happy"
-		await get_tree().create_timer(1.1).timeout
+		await get_tree().create_timer(1).timeout
 		$reaction.stream = load("res://assets/sounds/sonido_contento.wav")
 		$reaction.play()
 		Global.cont_bien += 1
 	Global.animacion = Global.character + sufijo
 
 	if Global.character == "goblin":
-		await get_tree().create_timer(1.9).timeout
+		await get_tree().create_timer(2).timeout
 		Global.animacion = "goblin_neutral"
 
 func _on_maquina_button_mouse_entered():
