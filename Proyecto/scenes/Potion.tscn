@@ -18,7 +18,6 @@
 [ext_resource type="Texture2D" uid="uid://dry2bib5cr7es" path="res://assets/objects/pocima14.png" id="16_dmwvu"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q2rkf"]
-load_path = "res://.godot/imported/relleno_pocima1.png-13166aff1e28dad93ed876a04d393f29.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w5ybk"]
 animations = [{
@@ -93,12 +92,7 @@ offset = Vector2(0.3, -0.3)
 
 [node name="drink" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_j3wv6")
-
-[node name="happy" type="AudioStreamPlayer" parent="."]
-
-[node name="neutral" type="AudioStreamPlayer" parent="."]
-
-[node name="angry" type="AudioStreamPlayer" parent="."]
+bus = &"Music"
 
 [connection signal="animation_changed" from="Filling" to="." method="_on_filling_animation_changed"]
 [connection signal="animation_finished" from="Filling" to="." method="_on_animated_sprite_2d_animation_finished"]

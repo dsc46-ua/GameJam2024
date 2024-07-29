@@ -137,6 +137,7 @@ flat = true
 [node name="pouring" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("9_gev0x")
 volume_db = -20.0
+bus = &"Music"
 
 [node name="FondoBar1" type="Sprite2D" parent="."]
 z_index = -4
@@ -151,6 +152,10 @@ offset = Vector2(0.3, -0.3)
 [node name="contador" parent="." instance=ExtResource("11_8xuiw")]
 position = Vector2(253.5, 18.5)
 scale = Vector2(0.882813, 0.875)
+
+[node name="reaction" type="AudioStreamPlayer" parent="."]
+volume_db = -12.0
+bus = &"Music"
 
 [connection signal="mouse_entered" from="go_storage" to="." method="_on_go_storage_mouse_entered"]
 [connection signal="mouse_exited" from="go_storage" to="." method="_on_go_storage_mouse_exited"]
