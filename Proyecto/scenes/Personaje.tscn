@@ -266,7 +266,7 @@ script = ExtResource("1_6krua")
 position = Vector2(-21, 59)
 scale = Vector2(0.772589, 0.714457)
 sprite_frames = SubResource("SpriteFrames_b30cg")
-animation = &"tutorial_guy"
+animation = &"none"
 autoplay = "none"
 
 [node name="movement_player" type="AnimationPlayer" parent="."]

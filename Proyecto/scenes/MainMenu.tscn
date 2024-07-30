@@ -32,7 +32,6 @@ text = "Options"
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 visible = false
 layout_mode = 2
-disabled = true
 text = "Quit"
 
 [node name="MainMenu" type="Sprite2D" parent="."]

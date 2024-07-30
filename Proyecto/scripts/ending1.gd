@@ -5,6 +5,8 @@ extends Node2D
 func _ready():
 	Global.change_music2 = true
 	Global.currentScene = 0
+	Global.cont_mal = 0
+	Global.cont_bien = 0
 	Global.bool_playing = false
 	$fade.play("Fade in")
 	await get_tree().create_timer(3).timeout

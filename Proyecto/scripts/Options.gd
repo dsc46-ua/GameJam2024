@@ -35,6 +35,8 @@ func _on_check_button_toggled(toggled_on):
 func _on_quit_pressed():
 	Global.change_music2 = true
 	Global.currentScene = 0
+	Global.cont_mal = 0
+	Global.cont_bien = 0
 	Global.bool_playing = false
 	Global.bool_quieto = false
 	get_tree().change_scene_to_file("res://scenes/MainMenu.tscn")
