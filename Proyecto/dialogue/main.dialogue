@@ -179,7 +179,7 @@ Unknown Individual: “They shall later inform me of their experiences with thee
 
 Unknown Individual: “Since it is thy first day at this labor, I shall instruct thee in
 	 the rudiments.”
-*You nod firmly*
+You: *Nodding firmly*
 
 do Global.tutorial_pass_part = true
 

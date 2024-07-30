@@ -7,13 +7,16 @@ func highlight(image):
 	if(Global.bool_quieto):
 		image.set_modulate(Color(0, 1, 1, 1))
 
+
 func unhighlight(image):
 	if(Global.bool_quieto):
 		image.set_modulate(Color(1, 1, 1, 1))
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Global.bool_playing = true
+	Global.potion_crafted = false
 	$ColorRect.modulate = Color(0,0,0,0)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -23,21 +26,24 @@ func _process(delta):
 func _on_go_storage_mouse_entered():
 	highlight(storage)
 
+
 func _on_go_storage_mouse_exited():
 	unhighlight(storage)
+
 
 func _on_go_storage_pressed():
 	if Global.bool_quieto:
 		get_tree().change_scene_to_file("res://scenes/storage.tscn")
 
 func _on_maquina_button_pressed():
-	unhighlight(machine)
-	if  $"Vase/Filling".animation == "default" and Global.bool_conversacion:
+	if  $"Vase/Filling".animation == "default" and Global.bool_conversacion and !Global.potion_crafted:
 		if Global.ing1 != 0 and Global.ing2 != 0 and Global.ing3 != 0:
+			unhighlight(machine)
 			Global.bool_fade = false
 			$"Vase/Filling".play("fill")
 			$pouring.play()
 			Global.bool_quieto = false
+			Global.potion_crafted = true
 #Global.bool_quieto and
 func _on_options_button_pressed():
 	if Global.bool_quieto:

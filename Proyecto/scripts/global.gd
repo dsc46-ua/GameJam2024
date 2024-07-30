@@ -15,9 +15,11 @@ extends Node2D
 @onready var manual_page = 0
 @onready var change_music = false
 @onready var change_music2 = false
+@onready var potion_crafted = false
 
 #Overall score
 @onready var score = 0
+
 
 #Controls on which scene we are
 @onready var currentScene = 0
