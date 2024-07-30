@@ -34,7 +34,7 @@ do Global.bool_conversacion = true
 
 ~ goblin
 
-EErmenegildo:  Oh, thank goodness I found you! need your help right now. The knights are 
+Ermenegildo:  Oh, thank goodness I found you! need your help right now. The knights are 
 	after me, and I really need a potion to escape from them.
 
 You: Why are the knights chasing you in first place?
@@ -65,14 +65,15 @@ Gorgolov: I require a potion to enhance my ability to absorb and comprehend your
 You: I understand, Gorgolov. Why do you feel the need to accelerate your 
 	learning, aren’t you immortal or something?
 
-Gorgolov: With a stern expression Time is a luxury I can afford. My dependence on 
+Gorgolov: *With a stern expression* Time is a luxury I can afford. My dependence on 
 	my translator must end swiftly as his life is ending. 
 
 Gorgolov: I must master your language to assert my authority and independence.
 
 You: Very well. What kind of potion do you think would help you learn faster?
 
-Gorgolov: In an ancient tone A potion that sharpens the mind and enhances memory. Ingredients that promote clarity and quick learning.
+Gorgolov: *In an ancient tone* A potion that sharpens the mind and enhances 
+	memory. Ingredients that promote clarity and quick learning.
 
 Gorgolov: Do you possess such knowledge?
 
