@@ -33,4 +33,8 @@ func _on_check_button_toggled(toggled_on):
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 
 func _on_quit_pressed():
-	get_tree().quit()
+	Global.change_music2 = true
+	Global.currentScene = 0
+	Global.bool_playing = false
+	Global.bool_quieto = false
+	get_tree().change_scene_to_file("res://scenes/MainMenu.tscn")
