@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="DarkTenderFinal"
-run/main_scene="res://scenes/IntroMenu.tscn"
+run/main_scene="res://scenes/displayed_manual.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icono_re_verde.ico"
 
