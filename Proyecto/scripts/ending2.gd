@@ -4,6 +4,7 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Global.change_music2 = true
+	Global.currentScene = 0
 	Global.bool_playing = false
 	$fade2.play("Fade in")
 	await get_tree().create_timer(3).timeout
