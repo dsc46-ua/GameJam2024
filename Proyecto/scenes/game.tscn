@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://b4k58pxg5hxpg"]
+[gd_scene load_steps=17 format=3 uid="uid://b4k58pxg5hxpg"]
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_5g3eh"]
 [ext_resource type="PackedScene" uid="uid://dbsw33e8qsbqi" path="res://scenes/Personaje.tscn" id="2_fjr0y"]
@@ -65,6 +65,9 @@ _data = {
 "Fade out": SubResource("Animation_2to6t"),
 "RESET": SubResource("Animation_xpc45")
 }
+
+[sub_resource type="LabelSettings" id="LabelSettings_g87s7"]
+font_size = 6
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_5g3eh")
@@ -156,6 +159,15 @@ scale = Vector2(0.882813, 0.875)
 [node name="reaction" type="AudioStreamPlayer" parent="."]
 volume_db = -15.0
 bus = &"Music"
+
+[node name="warning" type="Label" parent="."]
+visible = false
+offset_left = 197.0
+offset_top = 80.0
+offset_right = 308.0
+offset_bottom = 91.0
+text = "You have to speak with the client first!"
+label_settings = SubResource("LabelSettings_g87s7")
 
 [connection signal="mouse_entered" from="go_storage" to="." method="_on_go_storage_mouse_entered"]
 [connection signal="mouse_exited" from="go_storage" to="." method="_on_go_storage_mouse_exited"]

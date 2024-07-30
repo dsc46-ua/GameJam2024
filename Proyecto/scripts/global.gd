@@ -17,6 +17,7 @@ extends Node2D
 @onready var change_music2 = false
 @onready var potion_crafted = false
 
+
 #Overall score
 @onready var score = 0
 

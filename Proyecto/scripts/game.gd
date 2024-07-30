@@ -36,6 +36,12 @@ func _on_go_storage_pressed():
 		get_tree().change_scene_to_file("res://scenes/storage.tscn")
 
 func _on_maquina_button_pressed():
+	
+	if(Global.bool_quieto and !Global.bool_conversacion):
+		$warning.visible = true
+		await get_tree().create_timer(0.5).timeout
+		$warning.visible = false
+	
 	if  $"Vase/Filling".animation == "default" and Global.bool_conversacion and !Global.potion_crafted:
 		if Global.ing1 != 0 and Global.ing2 != 0 and Global.ing3 != 0:
 			unhighlight(machine)
