@@ -12,6 +12,13 @@ The GDD contains everything related to the game development including a timeline
 
 Link to GDD (Game Design Document): https://docs.google.com/document/d/1OHnQiuf5ms4jMou7wKib6ESrC3N5xsaA2McSOwe7uZM/edit#heading=h.k2hqrk99qjg6
 
+## Development Software
+
+Godot 4.2 for programming
+
+Libresprite for graphics and UI
+
+
 ## Results
 
 From a total of 1400+ games uploaded and with no prior experience to the programming languages and software used the results were:
