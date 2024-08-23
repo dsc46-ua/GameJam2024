@@ -14,7 +14,7 @@ Link to GDD (Game Design Document): https://docs.google.com/document/d/1OHnQiuf5
 
 ## Results
 
-From a total of 1400+ entries and with no prior experience to the programming languages and software used the results were:
+From a total of 1400+ games uploaded and with no prior experience to the programming languages and software used the results were:
 
 1. **Theme**: #233
 2. **Playability**: #258
