@@ -8,7 +8,7 @@ The PirateSoftwareGameJam2024 main theme was "Shadows and Alchemy", which served
 
 ## Game Design Document
 
-The GDD contains everything related to the game development and including a timeline of the tasks
+The GDD contains everything related to the game development including a timeline of the tasks
 
 Link to GDD (Game Design Document): https://docs.google.com/document/d/1OHnQiuf5ms4jMou7wKib6ESrC3N5xsaA2McSOwe7uZM/edit#heading=h.k2hqrk99qjg6
 
