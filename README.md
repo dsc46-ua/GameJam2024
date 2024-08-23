@@ -24,14 +24,19 @@ From a total of 1400+ games uploaded and with no prior experience to the program
 ## How to Run the Game
 
 It runs on browser
+
 Link to Game Page on itch.io: https://milnombres.itch.io/darktender
 
 ## Contributors
 
 Game Direction/Programmer: Daniel Segurado Climent
+
 Programmer: Jastin Alexander Fernández Santín
+
 Artist: Gabriel Alcalá Valero
+
 Music: Pedro Lluch
+
 Narrative: Antonio Morales
 
 ## Acknowledgments
