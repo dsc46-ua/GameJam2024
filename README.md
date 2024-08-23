@@ -50,8 +50,9 @@ Narrative: Antonio Morales
 
 Because this project was developed within a time-limited game jam and only two people were responsible for the programming, the code currently lacks comments. We apologize for any inconvenience this may cause.
 
-## Licenses:
+## License:
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
 ## Acknowledgments
