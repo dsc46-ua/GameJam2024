@@ -50,8 +50,18 @@ Narrative: Antonio Morales
 
 Because this project was developed within a time-limited game jam and only two people were responsible for the programming, the code currently lacks comments. We apologize for any inconvenience this may cause.
 
+## Licenses:
+
+
+
 ## Acknowledgments
 
 To Pirate Software for hosting this amazing event.
 
+Font: Mountain King Regular by https://michaelwmoss.com licensed by http://creativecommons.org/licenses/by/4.0/
 
+Music by our music Pedro Lluch
+
+Sounds Effects by our music Pedro Lluch and Pixabay
+
+Sprites and Art made by our artist Gabriel Alcalá with Libresprite
